@@ -35,7 +35,7 @@
       height: 305px;
       border-radius: 50%;
       background-color: #f5f7fa;
-      z-index: -1;
+      z-index: 1;
     }
     &::after {
       content: "";
@@ -46,7 +46,7 @@
       height: 374px;
       border-radius: 50%;
       background-color: #fafafc;
-      z-index: -2;
+      z-index: 0;
     }
   }
 
@@ -58,6 +58,7 @@
     color: #343e51;
     margin-bottom: 18px;
     line-height: 1;
+    z-index: 1;
     &::before {
       content: "";
       position: absolute;
@@ -85,6 +86,7 @@
     font-size: 58px;
     font-weight: 700;
     color: #1e2d4b;
+    z-index: 1;
     span {
       color: #455fed;
     }
@@ -113,6 +115,7 @@
     background-image: url(../../img/search/ad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
   }
 
   &__header-right-ad-title {
@@ -295,4 +298,65 @@
   &__main-custom-checkbox > input:disabled + span::before {
     background-color: #e9ecef;
   }
+}
+
+//division.html
+.search__header-left-title--division {
+  color: #ff3c46;
+  line-height: 64px;
+}
+.search__header-left-title--division span {
+  color: #1e2d4b;
+}
+.search__header-left--division {
+  flex: 0 0 65%;
+  padding-top: 71px;
+}
+.search__title--division {
+  font-size: 36px;
+}
+.search__breadcrumb {
+  padding-top: 22px;
+  z-index: 3;
+  position: relative;
+}
+.search__breadcrumb-item {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3c3c3c;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .7;
+  }
+  & + & {
+    margin-left: 30px;
+  }
+  &:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    top: 0;
+    right: -19px;
+  }
+}
+.main.main--division {
+  padding-top: 0;
+}
+.main .search__header--division {
+  padding-top: 0;
+  align-items: flex-start;
+  margin-bottom: 36px;
+  background-image: url(../../img/bg-division.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.main .search__header-right-ad--division {
+  margin-top: 0;
+}
+.main .search__main--division {
+  margin-bottom: 60px;
+}
+.search.search--division {
+  margin-bottom: 51px!important;
 }

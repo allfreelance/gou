@@ -87,6 +87,9 @@
   .footer__link {
     margin-right: 10px!important;
   }
+  .main .search__header-left--division {
+    flex: 0 0 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -492,6 +495,13 @@
 
   //faculties
   .mobile-bottom-menu {
+    &__btn-faculties {
+      transition: opacity .3s ease;
+      opacity: .7;
+      &.active {
+        opacity: 1;
+      }
+    }
     &__faculties {
       position: fixed;
       bottom: -100%;
@@ -546,6 +556,13 @@
 
   //filters
   .mobile-bottom-menu {
+    &__btn-filters {
+      transition: opacity .3s ease;
+      opacity: .7;
+      &.active {
+        opacity: 1;
+      }
+    }
     &__filters {
       position: fixed;
       bottom: -100%;
