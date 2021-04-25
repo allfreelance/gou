@@ -1,0 +1,33 @@
+.division__card-status--medicine {
+  color: #40b7d1;
+}
+.division__card-status--medicine::before {
+    background-image: linear-gradient( -8deg, rgb(64,183,209) 0%, rgb(103,210,233) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(96, 205, 229, 0.47);
+}
+.division__card-btn--medicine {
+    background-image: linear-gradient( -8deg, rgb(64,183,209) 0%, rgb(103,210,233) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(96, 205, 229, 0.47);
+}
+.division__card--medicine::after {
+  background-color: #40b7d1;
+}
+.division__card--medicine:hover {
+    background-image: linear-gradient( -8deg, rgb(64,183,209) 0%, rgb(103,210,233) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(96, 205, 229, 0.47);
+}
+.division__card--medicine:hover .division__card-btn {
+  color: #40b7d1;
+}
+.division__card--medicine::before {
+  content: url(../../img/division/m2.svg);
+  bottom: 3px;
+  right: 2px;
+  transform: rotateY(180deg);
+}
+.division__card--medicine:hover::before {
+  content: url(../../img/division/m2-hover.svg);
+  bottom: 3px;
+  right: 2px;
+  transform: rotateY(180deg);
+}

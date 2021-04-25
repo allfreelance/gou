@@ -1,0 +1,31 @@
+.division__card-status--magistracy {
+  color: #ee9f43;
+}
+.division__card-status--magistracy::before {
+    background-image: linear-gradient( -8deg, rgb(247,165,70) 0%, rgb(252,195,108) 100%);
+    box-shadow: 0.3px 3px 6px 0px rgba(251, 188, 99, 0.47);
+}
+.division__card-btn--magistracy {
+    background-image: linear-gradient( -8deg, rgb(239,159,67) 0%, rgb(252,195,108) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(251, 188, 99, 0.47);
+}
+.division__card--magistracy::after {
+  background-color: #f8ab52;
+}
+.division__card--magistracy:hover {
+    background-image: linear-gradient( -8deg, rgb(239,159,67) 0%, rgb(252,195,108) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(251, 188, 99, 0.47);
+}
+.division__card--magistracy:hover .division__card-btn {
+  color: #ef9f43;
+}
+.division__card--magistracy::before {
+  content: url(../../img/division/a.svg);
+  bottom: 14px;
+  right: 2px;
+}
+.division__card--magistracy:hover::before {
+  content: url(../../img/division/a-hover.svg);
+  bottom: 14px;
+  right: 2px;
+}

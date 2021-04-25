@@ -1,0 +1,31 @@
+.division__card-status--graduate {
+  color: #1fc4be;
+}
+.division__card-status--graduate::before {
+    background-image: linear-gradient( -8deg, rgb(31,196,190) 0%, rgb(82,239,233) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(91, 238, 222, 0.47);
+}
+.division__card-btn--graduate {
+    background-image: linear-gradient( -8deg, rgb(31,196,190) 0%, rgb(82,239,233) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(91, 238, 222, 0.47);
+}
+.division__card--graduate::after {
+  background-color: #15d3cc;
+}
+.division__card--graduate:hover {
+    background-image: linear-gradient( -8deg, rgb(31,196,190) 0%, rgb(82,239,233) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(91, 238, 222, 0.47);
+}
+.division__card--graduate:hover .division__card-btn {
+  color: #1fc4be;
+}
+.division__card--graduate::before {
+  content: url(../../img/division/m.svg);
+  bottom: 30px;
+  right: 3px;
+}
+.division__card--graduate:hover::before {
+  content: url(../../img/division/m-hover.svg);
+  bottom: 30px;
+  right: 3px;
+}

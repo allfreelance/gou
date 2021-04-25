@@ -1,0 +1,31 @@
+.division__card-status--mba {
+  color: #ed5044;
+}
+.division__card-status--mba::before {
+    background-image: linear-gradient( -8deg, rgb(237,80,68) 0%, rgb(247,122,105) 100%);
+    box-shadow: 0.3px 3px 6px 0px rgba(241, 115, 98, 0.47);
+}
+.division__card-btn--mba {
+    background-image: linear-gradient( -8deg, rgb(227,76,64) 0%, rgb(247,122,105) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(241, 115, 98, 0.47);
+}
+.division__card--mba::after {
+  background-color: #ed5044;
+}
+.division__card--mba:hover {
+    background-image: linear-gradient( -8deg, rgb(227,76,64) 0%, rgb(247,122,105) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(241, 115, 98, 0.47);
+}
+.division__card--mba:hover .division__card-btn {
+  color: #e34c40;
+}
+.division__card--mba::before {
+  content: url(../../img/division/mba.svg);
+  bottom: 1px;
+  right: -1px;
+}
+.division__card--mba:hover::before {
+  content: url(../../img/division/mba-hover.svg);
+  bottom: 1px;
+  right: -1px;
+}

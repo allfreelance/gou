@@ -1,0 +1,31 @@
+.division__card-status--second {
+  color: #37d288;
+}
+.division__card-status--second::before {
+    background-image: linear-gradient( -8deg, rgb(55,210,136) 0%, rgb(85,242,151) 100%);
+    box-shadow: 0.3px 3px 6px 0px rgba(75, 231, 146, 0.47);
+}
+.division__card-btn--second {
+    background-image: linear-gradient( -8deg, rgb(62,192,130) 0%, rgb(85,242,151) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(75, 231, 146, 0.47);
+}
+.division__card--second::after {
+  background-color: #37d288;
+}
+.division__card--second:hover {
+    background-image: linear-gradient( -8deg, rgb(62,192,130) 0%, rgb(85,242,151) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(75, 231, 146, 0.47);
+}
+.division__card--second:hover .division__card-btn {
+  color: #3ec082;
+}
+.division__card--second::before {
+  content: url(../../img/division/s.svg);
+  bottom: 24px;
+  right: 2px;
+}
+.division__card--second:hover::before {
+  content: url(../../img/division/s-hover.svg);
+  bottom: 24px;
+  right: 2px;
+}

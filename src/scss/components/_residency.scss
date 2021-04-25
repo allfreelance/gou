@@ -1,0 +1,31 @@
+.division__card-status--residency {
+  color: #f1681d;
+}
+.division__card-status--residency::before {
+    background-image: linear-gradient( -8deg, rgb(241,104,29) 0%, rgb(245,157,109) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(250, 171, 128, 0.47);
+}
+.division__card-btn--residency {
+    background-image: linear-gradient( -8deg, rgb(241,104,29) 0%, rgb(245,157,109) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(250, 171, 128, 0.47);
+}
+.division__card--residency::after {
+  background-color: #f1681d;
+}
+.division__card--residency:hover {
+    background-image: linear-gradient( -8deg, rgb(241,104,29) 0%, rgb(245,157,109) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(250, 171, 128, 0.47);
+}
+.division__card--residency:hover .division__card-btn {
+  color: #f1681d;
+}
+.division__card--residency::before {
+  content: url(../../img/division/o.svg);
+  bottom: 20px;
+  right: 2px;
+}
+.division__card--residency:hover::before {
+  content: url(../../img/division/o-hover.svg);
+  bottom: 20px;
+  right: 2px;
+}

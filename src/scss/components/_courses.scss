@@ -1,0 +1,31 @@
+.division__card-status--courses {
+  color: #dc4287;
+}
+.division__card-status--courses::before {
+    background-image: linear-gradient( -8deg, rgb(220,66,135) 0%, rgb(243,125,178) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(241, 124, 176, 0.47);
+}
+.division__card-btn--courses {
+    background-image: linear-gradient( -8deg, rgb(220,66,135) 0%, rgb(243,125,178) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(241, 124, 176, 0.47);
+}
+.division__card--courses::after {
+  background-color: #dc4287;
+}
+.division__card--courses:hover {
+    background-image: linear-gradient( -8deg, rgb(220,66,135) 0%, rgb(243,125,178) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(241, 124, 176, 0.47);
+}
+.division__card--courses:hover .division__card-btn {
+  color: #dc4287;
+}
+.division__card--courses::before {
+  content: url(../../img/division/k2.svg);
+  bottom: 29px;
+  right: 2px;
+}
+.division__card--courses:hover::before {
+  content: url(../../img/division/k2-hover.svg);
+  bottom: 29px;
+  right: 2px;
+}

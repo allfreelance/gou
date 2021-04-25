@@ -1,0 +1,298 @@
+.search {
+  padding-top: 39px;
+  margin-bottom: 48px!important;
+  &__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: #1e2d4b;
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 50px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 47px;
+    padding-top: 40px;
+  }
+
+  &__header-left {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 45%;
+    width: 45%;
+    position: relative;
+    line-height: 58px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -37px;
+      left: -94px;
+      width: 305px;
+      height: 305px;
+      border-radius: 50%;
+      background-color: #f5f7fa;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -72px;
+      left: -128px;
+      width: 374px;
+      height: 374px;
+      border-radius: 50%;
+      background-color: #fafafc;
+      z-index: -2;
+    }
+  }
+
+  &__header-left-status {
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 37px;
+    color: #343e51;
+    margin-bottom: 18px;
+    line-height: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      background: linear-gradient(151deg, rgb(69, 95, 237) 0%, rgb(131, 150, 253) 100%);
+      box-shadow: 0.418px 3.978px 9px 0px rgba(83, 107, 242, 0.47);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 74%;
+      height: 1px;
+      background-color: #e8e8e8;
+    }
+  }
+
+  &__header-left-title {
+    font-size: 58px;
+    font-weight: 700;
+    color: #1e2d4b;
+    span {
+      color: #455fed;
+    }
+  }
+
+  &__header-right-book {
+    flex: 0 0 auto;
+    height: 300px;
+    margin-right: 56px;
+    margin-top: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__header-right-ad {
+    position: relative;
+    flex: 0 0 auto;
+    height: 300px;
+    width: 263px;
+    padding: 78px 45px;
+    line-height: 30px;
+    margin-top: 10px;
+    background-image: url(../../img/search/ad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__header-right-ad-title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 175px;
+    margin-bottom: 7px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -17px;
+      height: 86%;
+      width: 2px;
+      background-color: #fff;
+    }
+  }
+
+  &__header-right-ad-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fd9298;
+    text-decoration: underline;
+  }
+
+  &__main {
+    position: relative;
+    border: 1px solid #455fed;
+    border-radius: 1px;
+    padding: 33px 33px;
+    margin-bottom: 75px;
+  }
+  &__selects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+  &__select-ege {
+    height: 52px;
+    width: 180px;
+  }
+  &__select-institution {
+    height: 52px;
+    width: 247px;
+  }
+  &__select-faculty {
+    height: 52px;
+    width: 180px;
+  }
+  &__select-city {
+    height: 52px;
+    width: 180px;
+  }
+  &__select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 226px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff3c46;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: box-shadow .3s ease, background-color .3s ease;
+    box-shadow: 0.4px 4px 16px 0px rgba(255, 60, 70, 0.28), inset -1px -3px 0px 0px rgba(209, 28, 37, 0.004),
+      inset -2px -4px 1px 0px #d11c25;
+    &:hover {
+      box-shadow: 0.4px 4px 16px 0px rgba(255, 60, 70, 0.28), inset -1px -3px 0px 0px rgba(209, 28, 37, 0.004),
+      inset 0px 0px 0px 0px #d11c25;
+      background-color: #fc525b;
+    }
+  }
+  &__checked-items {
+    position: relative;
+    margin-bottom: 53px;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: transparent;
+      border-bottom: 1px dashed #e8e8e8;
+    }
+  }
+  &__checked-item {
+    display: inline-flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3346b0;
+    background-color: #eceffc;
+    height: 30px;
+    padding: 5px 30px 5px 16px;
+    border-radius: 31px;
+    margin-right: 10px;
+    &::before {
+      content: url(../../img/search/del.png);
+      position: absolute;
+      top: 6px;
+      right: 5px;
+      cursor: pointer;
+      
+    }
+  }
+  &__checked-reset {
+    font-size: 16px;
+    font-weight: 400;
+    color: #455fed;
+    cursor: pointer;
+    padding-left: 6px;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__main-custom-checkbox {
+    margin-right: 26px;
+  }
+  &__main-custom-checkbox > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  &__main-custom-checkbox > span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    position: relative;
+    padding-left: 29px;
+  }
+  &__main-custom-checkbox > span::before {
+    content: "";
+    display: inline-block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+  }
+  &__main-custom-checkbox > input:not(:disabled):active + span::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+  }
+
+  &__main-custom-checkbox > input:checked + span::before {
+    content: url(../../img/search/checkbox.svg);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 4px;
+    background-image: linear-gradient(-8deg, rgb(69, 95, 237) 0%, rgb(131, 150, 253) 100%);
+  }
+  &__main-custom-checkbox > input:disabled + span::before {
+    background-color: #e9ecef;
+  }
+}

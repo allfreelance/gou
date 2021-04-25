@@ -1,0 +1,44 @@
+.header {
+  &__banner {
+    background-image: url(../../img/banner-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100px;
+  }
+
+  &__mobile {
+    display: none;
+  }
+  
+  &__banner-title {
+    padding-top: 13px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: #d2d9ff;
+    margin-bottom: 8px;
+  }
+
+  &__banner-contacts {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: #9fadf8;
+  }
+
+  &__banner-contact {
+    margin-right: 22px;
+  }
+  &__banner-contact span {
+    padding-right: 2px;
+  }
+  &__banner-contact-link {
+    transition: color .3s ease;
+    &:hover {
+      color: #d2d9ff;
+    }
+  }
+}

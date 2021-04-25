@@ -1,0 +1,31 @@
+.division__card-status--bachelor {
+  color: #3483fc;
+}
+.division__card-status--bachelor::before {
+    background-image: linear-gradient( -8deg, rgb(52,120,252) 0%, rgb(53,175,250) 100%);
+    box-shadow: 0.3px 3px 6px 0px rgba(53, 173, 250, 0.47);
+}
+.division__card-btn--bachelor {
+    background-image: linear-gradient( 136deg, rgb(53,175,250) 0%, rgb(66,125,238) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(53, 173, 250, 0.47);
+}
+.division__card--bachelor::after {
+  background-color: #3478fc;
+}
+.division__card--bachelor:hover {
+    background-image: linear-gradient( 136deg, rgb(53,175,250) 0%, rgb(66,125,238) 100%);
+    box-shadow: 0.4px 4px 9px 0px rgba(53, 173, 250, 0.47);
+}
+.division__card--bachelor:hover .division__card-btn {
+  color: #427eee;
+}
+.division__card--bachelor::before {
+  content: url(../../img/division/b.svg);
+  bottom: 46px;
+  right: 2px;
+}
+.division__card--bachelor:hover::before {
+  content: url(../../img/division/b-hover.svg);
+  bottom: 46px;
+    right: 2px;
+}

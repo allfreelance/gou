@@ -1,0 +1,45 @@
+.store {
+  background-color: #f7f8f9;
+  padding: 66px 0 80px;
+  margin-top: 68px;
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #343e51;
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #343e51;
+    line-height: 24px;
+    &:nth-of-type(1) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__list {
+    margin: 7px 0 6px;
+  }
+
+  &__list-item {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    color: #343e51;
+    padding-left: 27px;
+    line-height: 37px;
+    &::before {
+      content: url(../../img/square.png);
+      position: absolute;
+      top: 2px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &__btn-details {
+    display: none;
+  }
+}
