@@ -124,6 +124,153 @@
       </div>
       <h5 class="search__title">Выберите факультет, чтобы подобрать учебное заведение</h5>
     </section>
+    <div class="mobile-bottom-menu">
+      <div class="mobile-bottom-menu__faculties">
+        <span class="mobile-bottom-menu__faculties-close">
+          <img src="img/mobile/close-filter.svg" alt="Close filter">
+        </span>
+        <h5 class="mobile-bottom-menu__faculties-title">Факультеты</h5>
+        <nav class="mobile-bottom-menu__main container">
+          <ul class="mobile-bottom-menu__main-items desktop-filters">
+            <li class="mobile-bottom-menu__main-item desktop-filters-item active">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Колледж</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Бакалавриат</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Второе высшее</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Магистратура</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Аспирантура</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Медицина</a>
+              <span></span>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Ординатура</a>
+              <span></span>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">МВА</a>
+              <span></span>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Курсы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-bottom-menu__filters">
+        <span class="mobile-bottom-menu__filters-close">
+          <img src="img/mobile/close-filter.svg" alt="Close filter">
+        </span>
+        <h5 class="mobile-bottom-menu__filters-title">Фильтры</h5>
+        <div class="search__main">
+          <div class="search__selects">
+            <div class="search__select-ege">
+              <select class="selectric select-ege" multiple tabindex="-1">
+                <option value="" disabled>Предметы ЕГЭ</option>
+                <option value="biology">Биология</option>
+                <option value="geography">География</option>
+                <option value="language">Иностранный язык</option>
+                <option value="computer">Информатика и ИКТ</option>
+                <option value="history">История</option>
+                <option value="literature">Литература</option>
+                <option value="mathematics">Математика</option>
+                <option value="social">Обществознание</option>
+                <option value="russian-language">Русский язык</option>
+                <option value="physics">Физика</option>
+                <option value="chemistry">Химия</option>
+              </select>
+            </div>
+  
+            <div class="search__select-institution">
+              <select class="selectric select-institution" multiple>
+                <option value="" disabled>Учебное заведение</option>
+                <option value="college">Колледж</option>
+                <option value="undergraduate">Бакалавриат</option>
+                <option value="second-higher ">Второе высшее</option>
+                <option value="master">Магистратура</option>
+                <option value="postgraduate">Аспирантура</option>
+                <option value="medicine">Медицина</option>
+                <option value="residency">Ординатура</option>
+                <option value="mba">MBA</option>
+                <option value="courses">Курсы</option>
+              </select>
+            </div>
+  
+            <div class="search__select-faculty">
+              <select class="selectric select-faculty" multiple>
+                <option value="" disabled>Факультет</option>
+                <option value="economy">Экономика</option>
+                <option value="design">Дизайн</option>
+                <option value="business">Бизнес</option>
+                <option value="jurisprudence">Юриспруденция</option>
+                <option value="psychology">Психология</option>
+                <option value="control">Управление</option>
+                <option value="hospitality">Гостепреимство</option>
+                <option value="marketing">Интернет-маркетинг</option>
+                <option value="linguistics">Лингвистика</option>
+                <option value="media">Театр, кино и телевидение</option>
+              </select>
+            </div>
+  
+            <div class="search__select-city">
+              <select class="selectric select-city">
+                <option value="">Город</option>
+                <option value="moscow">Москва</option>
+                <option value="petersburg">Санкт-Петербург</option>
+                <option value="astrakhan">Астрахань</option>
+                <option value="barnaul">Барнаул</option>
+                <option value="vladivostok">Владивосток</option>
+                <option value="volgograd">Волгоград</option>
+                <option value="voronezh">Воронеж</option>
+                <option value="yekaterinburg">Екатеринбург</option>
+                <option value="izhevsk">Ижевск</option>
+                <option value="irkutsk">Иркутск</option>
+                <option value="kazan">Казань</option>
+                <option value="kemerovo">Кемерово</option>
+                <option value="kirov">Киров</option>
+              </select>
+            </div>
+            <button class="search__select-btn">Подобрать ВУЗ</button>
+          </div>
+  
+          <div class="search__checked-items">
+            <span class="search__checked-item">Биология</span>
+            <span class="search__checked-item">Колледж</span>
+            <span class="search__checked-reset">Сбросить все</span>
+          </div>
+  
+          <div class="search__main-checkbox-block">
+            <label class="search__main-custom-checkbox">
+              <input type="checkbox">
+              <span>Военная кафедра</span>
+            </label>
+            <label class="search__main-custom-checkbox">
+              <input type="checkbox">
+              <span>Общежитие</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-bottom-menu__buttons">
+        <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-faculties">
+          <span class="mobile-bottom-menu__btn-name">Факультеты</span>
+        </button>
+        <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-filters">
+          <span class="mobile-bottom-menu__btn-name">
+            <span class="mobile-bottom-menu__btn-quantity">3</span>
+            <span>Фильтры</span>
+          </span>
+        </button>
+      </div>
+    </div>
     <section class="division college container">
       <h3 class="division__title">Колледж</h3>
       <div class="division__cards-wrapper">
@@ -769,150 +916,7 @@
 
   @include('partials/footer.html')
 
-  <div class="mobile-bottom-menu">
-    <div class="mobile-bottom-menu__faculties">
-      <span class="mobile-bottom-menu__faculties-close">
-        <img src="img/mobile/close-filter.svg" alt="Close filter">
-      </span>
-      <h5 class="mobile-bottom-menu__faculties-title">Факультеты</h5>
-      <nav class="mobile-bottom-menu__main">
-        <ul class="mobile-bottom-menu__main-items">
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">Колледж</a>
-          </li>
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">Бакалавриат</a>
-          </li>
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">Второе высшее</a>
-          </li>
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">Магистратура</a>
-          </li>
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">Аспирантура</a>
-          </li>
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">Медицина</a>
-          </li>
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">Ординатура</a>
-          </li>
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">МВА</a>
-          </li>
-          <li class="mobile-bottom-menu__main-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link">Курсы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="mobile-bottom-menu__filters">
-      <span class="mobile-bottom-menu__filters-close">
-        <img src="img/mobile/close-filter.svg" alt="Close filter">
-      </span>
-      <h5 class="mobile-bottom-menu__filters-title">Фильтры</h5>
-      <div class="search__main">
-        <div class="search__selects">
-          <div class="search__select-ege">
-            <select class="selectric select-ege" multiple tabindex="-1">
-              <option value="" disabled>Предметы ЕГЭ</option>
-              <option value="biology">Биология</option>
-              <option value="geography">География</option>
-              <option value="language">Иностранный язык</option>
-              <option value="computer">Информатика и ИКТ</option>
-              <option value="history">История</option>
-              <option value="literature">Литература</option>
-              <option value="mathematics">Математика</option>
-              <option value="social">Обществознание</option>
-              <option value="russian-language">Русский язык</option>
-              <option value="physics">Физика</option>
-              <option value="chemistry">Химия</option>
-            </select>
-          </div>
 
-          <div class="search__select-institution">
-            <select class="selectric select-institution" multiple>
-              <option value="" disabled>Учебное заведение</option>
-              <option value="college">Колледж</option>
-              <option value="undergraduate">Бакалавриат</option>
-              <option value="second-higher ">Второе высшее</option>
-              <option value="master">Магистратура</option>
-              <option value="postgraduate">Аспирантура</option>
-              <option value="medicine">Медицина</option>
-              <option value="residency">Ординатура</option>
-              <option value="mba">MBA</option>
-              <option value="courses">Курсы</option>
-            </select>
-          </div>
-
-          <div class="search__select-faculty">
-            <select class="selectric select-faculty" multiple>
-              <option value="" disabled>Факультет</option>
-              <option value="economy">Экономика</option>
-              <option value="design">Дизайн</option>
-              <option value="business">Бизнес</option>
-              <option value="jurisprudence">Юриспруденция</option>
-              <option value="psychology">Психология</option>
-              <option value="control">Управление</option>
-              <option value="hospitality">Гостепреимство</option>
-              <option value="marketing">Интернет-маркетинг</option>
-              <option value="linguistics">Лингвистика</option>
-              <option value="media">Театр, кино и телевидение</option>
-            </select>
-          </div>
-
-          <div class="search__select-city">
-            <select class="selectric select-city">
-              <option value="">Город</option>
-              <option value="moscow">Москва</option>
-              <option value="petersburg">Санкт-Петербург</option>
-              <option value="astrakhan">Астрахань</option>
-              <option value="barnaul">Барнаул</option>
-              <option value="vladivostok">Владивосток</option>
-              <option value="volgograd">Волгоград</option>
-              <option value="voronezh">Воронеж</option>
-              <option value="yekaterinburg">Екатеринбург</option>
-              <option value="izhevsk">Ижевск</option>
-              <option value="irkutsk">Иркутск</option>
-              <option value="kazan">Казань</option>
-              <option value="kemerovo">Кемерово</option>
-              <option value="kirov">Киров</option>
-            </select>
-          </div>
-          <button class="search__select-btn">Подобрать ВУЗ</button>
-        </div>
-
-        <div class="search__checked-items">
-          <span class="search__checked-item">Биология</span>
-          <span class="search__checked-item">Колледж</span>
-          <span class="search__checked-reset">Сбросить все</span>
-        </div>
-
-        <div class="search__main-checkbox-block">
-          <label class="search__main-custom-checkbox">
-            <input type="checkbox">
-            <span>Военная кафедра</span>
-          </label>
-          <label class="search__main-custom-checkbox">
-            <input type="checkbox">
-            <span>Общежитие</span>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="mobile-bottom-menu__buttons">
-      <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-faculties">
-        <span class="mobile-bottom-menu__btn-name">Факультеты</span>
-      </button>
-      <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-filters">
-        <span class="mobile-bottom-menu__btn-name">
-          <span class="mobile-bottom-menu__btn-quantity">3</span>
-          <span>Фильтры</span>
-        </span>
-      </button>
-    </div>
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

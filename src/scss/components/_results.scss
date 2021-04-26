@@ -1,5 +1,6 @@
 .results {
   &__items {
+    margin-bottom: 40px;
   }
 
   &__item {
@@ -46,8 +47,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 3px;
       left: 0;
       width: 22px;
       height: 22px;

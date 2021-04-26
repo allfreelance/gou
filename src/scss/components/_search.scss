@@ -1,6 +1,8 @@
 .search {
   padding-top: 39px;
   margin-bottom: 48px!important;
+  position: relative;
+
   &__title {
     font-size: 46px;
     font-weight: 700;
@@ -150,6 +152,8 @@
     border-radius: 1px;
     padding: 33px 33px;
     margin-bottom: 75px;
+    box-shadow: 0.4px 4px 16px 0px rgba(165, 190, 204, 0.28);
+
   }
   &__selects {
     display: flex;
@@ -309,8 +313,10 @@
   color: #1e2d4b;
 }
 .search__header-left--division {
-  flex: 0 0 65%;
+  flex: 1 1 65%;
   padding-top: 71px;
+  max-width: 870px;
+  margin: 0 auto;
 }
 .search__title--division {
   font-size: 36px;
@@ -345,18 +351,27 @@
 .main .search__header--division {
   padding-top: 0;
   align-items: flex-start;
-  margin-bottom: 36px;
-  background-image: url(../../img/bg-division.jpg);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
+  margin-bottom: 0;
 }
 .main .search__header-right-ad--division {
   margin-top: 0;
+  top: -38px;
 }
 .main .search__main--division {
   margin-bottom: 60px;
+  padding: 33px 15px;
+  position: relative;
+  background-color: #fff;
 }
-.search.search--division {
+.main .search.search--division {
   margin-bottom: 51px!important;
+  padding-top: 78px;
+  &::before {
+    content: url(../../img/bg-division.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+  }
 }

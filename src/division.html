@@ -15,8 +15,8 @@
   @include('partials/header.html')
 
   <main class="main main--division">
-    <section class="search search--division container">
-      <div class="search__breadcrumb">
+    <section class="search search--division">
+      <div class="search__breadcrumb container">
         <a href="#/" class="search__breadcrumb-item">Университеты</a>
         <a href="#/" class="search__breadcrumb-item">Санкт-Петербург</a>
         <a href="#/" class="search__breadcrumb-item">Юридический факультет</a>
@@ -30,94 +30,97 @@
           <a href="#/" class="search__header-right-ad-link">Подробнее</a>
         </div>
       </div>
-      <div class="search__main search__main--division">
-        <div class="search__selects">
-          <div class="search__select-ege">
-            <select class="selectric select-ege" multiple tabindex="-1">
-              <option value="" disabled>Предметы ЕГЭ</option>
-              <option value="biology">Биология</option>
-              <option value="geography">География</option>
-              <option value="language">Иностранный язык</option>
-              <option value="computer">Информатика и ИКТ</option>
-              <option value="history">История</option>
-              <option value="literature">Литература</option>
-              <option value="mathematics">Математика</option>
-              <option value="social">Обществознание</option>
-              <option value="russian-language">Русский язык</option>
-              <option value="physics">Физика</option>
-              <option value="chemistry">Химия</option>
-            </select>
+      <div class="search__main--division-wrapper container">
+        
+        <div class="search__main search__main--division">
+          <div class="search__selects">
+            <div class="search__select-ege">
+              <select class="selectric select-ege" multiple tabindex="-1">
+                <option value="" disabled>Предметы ЕГЭ</option>
+                <option value="biology">Биология</option>
+                <option value="geography">География</option>
+                <option value="language">Иностранный язык</option>
+                <option value="computer">Информатика и ИКТ</option>
+                <option value="history">История</option>
+                <option value="literature">Литература</option>
+                <option value="mathematics">Математика</option>
+                <option value="social">Обществознание</option>
+                <option value="russian-language">Русский язык</option>
+                <option value="physics">Физика</option>
+                <option value="chemistry">Химия</option>
+              </select>
+            </div>
+  
+            <div class="search__select-institution">
+              <select class="selectric select-institution" multiple>
+                <option value="" disabled>Учебное заведение</option>
+                <option value="college">Колледж</option>
+                <option value="undergraduate">Бакалавриат</option>
+                <option value="second-higher ">Второе высшее</option>
+                <option value="master">Магистратура</option>
+                <option value="postgraduate">Аспирантура</option>
+                <option value="medicine">Медицина</option>
+                <option value="residency">Ординатура</option>
+                <option value="mba">MBA</option>
+                <option value="courses">Курсы</option>
+              </select>
+            </div>
+  
+            <div class="search__select-faculty">
+              <select class="selectric select-faculty" multiple>
+                <option value="" disabled>Факультет</option>
+                <option value="economy">Экономика</option>
+                <option value="design">Дизайн</option>
+                <option value="business">Бизнес</option>
+                <option value="jurisprudence">Юриспруденция</option>
+                <option value="psychology">Психология</option>
+                <option value="control">Управление</option>
+                <option value="hospitality">Гостепреимство</option>
+                <option value="marketing">Интернет-маркетинг</option>
+                <option value="linguistics">Лингвистика</option>
+                <option value="media">Театр, кино и телевидение</option>
+              </select>
+            </div>
+  
+            <div class="search__select-city">
+              <select class="selectric select-city">
+                <option value="">Город</option>
+                <option value="moscow">Москва</option>
+                <option value="petersburg">Санкт-Петербург</option>
+                <option value="astrakhan">Астрахань</option>
+                <option value="barnaul">Барнаул</option>
+                <option value="vladivostok">Владивосток</option>
+                <option value="volgograd">Волгоград</option>
+                <option value="voronezh">Воронеж</option>
+                <option value="yekaterinburg">Екатеринбург</option>
+                <option value="izhevsk">Ижевск</option>
+                <option value="irkutsk">Иркутск</option>
+                <option value="kazan">Казань</option>
+                <option value="kemerovo">Кемерово</option>
+                <option value="kirov">Киров</option>
+              </select>
+            </div>
+            <button class="search__select-btn">Подобрать ВУЗ</button>
           </div>
-
-          <div class="search__select-institution">
-            <select class="selectric select-institution" multiple>
-              <option value="" disabled>Учебное заведение</option>
-              <option value="college">Колледж</option>
-              <option value="undergraduate">Бакалавриат</option>
-              <option value="second-higher ">Второе высшее</option>
-              <option value="master">Магистратура</option>
-              <option value="postgraduate">Аспирантура</option>
-              <option value="medicine">Медицина</option>
-              <option value="residency">Ординатура</option>
-              <option value="mba">MBA</option>
-              <option value="courses">Курсы</option>
-            </select>
+  
+          <div class="search__checked-items">
+            <div class="search__checked-items-wrapper">
+              <span class="search__checked-item">Биология</span>
+              <span class="search__checked-item">Колледж</span>
+            </div>
+            <span class="search__checked-reset">Сбросить все</span>
           </div>
-
-          <div class="search__select-faculty">
-            <select class="selectric select-faculty" multiple>
-              <option value="" disabled>Факультет</option>
-              <option value="economy">Экономика</option>
-              <option value="design">Дизайн</option>
-              <option value="business">Бизнес</option>
-              <option value="jurisprudence">Юриспруденция</option>
-              <option value="psychology">Психология</option>
-              <option value="control">Управление</option>
-              <option value="hospitality">Гостепреимство</option>
-              <option value="marketing">Интернет-маркетинг</option>
-              <option value="linguistics">Лингвистика</option>
-              <option value="media">Театр, кино и телевидение</option>
-            </select>
+  
+          <div class="search__main-checkbox-block">
+            <label class="search__main-custom-checkbox">
+              <input type="checkbox">
+              <span>Военная кафедра</span>
+            </label>
+            <label class="search__main-custom-checkbox">
+              <input type="checkbox">
+              <span>Общежитие</span>
+            </label>
           </div>
-
-          <div class="search__select-city">
-            <select class="selectric select-city">
-              <option value="">Город</option>
-              <option value="moscow">Москва</option>
-              <option value="petersburg">Санкт-Петербург</option>
-              <option value="astrakhan">Астрахань</option>
-              <option value="barnaul">Барнаул</option>
-              <option value="vladivostok">Владивосток</option>
-              <option value="volgograd">Волгоград</option>
-              <option value="voronezh">Воронеж</option>
-              <option value="yekaterinburg">Екатеринбург</option>
-              <option value="izhevsk">Ижевск</option>
-              <option value="irkutsk">Иркутск</option>
-              <option value="kazan">Казань</option>
-              <option value="kemerovo">Кемерово</option>
-              <option value="kirov">Киров</option>
-            </select>
-          </div>
-          <button class="search__select-btn">Подобрать ВУЗ</button>
-        </div>
-
-        <div class="search__checked-items">
-          <div class="search__checked-items-wrapper">
-            <span class="search__checked-item">Биология</span>
-            <span class="search__checked-item">Колледж</span>
-          </div>
-          <span class="search__checked-reset">Сбросить все</span>
-        </div>
-
-        <div class="search__main-checkbox-block">
-          <label class="search__main-custom-checkbox">
-            <input type="checkbox">
-            <span>Военная кафедра</span>
-          </label>
-          <label class="search__main-custom-checkbox">
-            <input type="checkbox">
-            <span>Общежитие</span>
-          </label>
         </div>
       </div>
       <h5 class="search__title search__title--division">По Вашему запросу найдено 50 результатов</h5>
@@ -127,7 +130,10 @@
       <div class="results__items">
         <div class="results__item">
           <div class="results__item-img-block">
-            <img src="img/result-img.jpg" alt="Фото">
+            <picture>
+              <source srcset="img/result-img2x.jpg 2x, img/result-img.jpg 1x" />
+              <img src="img/result-img.jpg" alt="Учебагоу book">
+            </picture>
           </div>
           <div class="results__description">
             <h3 class="results__title">Государственный академический университет гуманитарных наук</h3>
@@ -137,7 +143,10 @@
         </div>
         <div class="results__item">
           <div class="results__item-img-block">
-            <img src="img/result-img.jpg" alt="Фото">
+            <picture>
+              <source srcset="img/result-img2x.jpg 2x, img/result-img.jpg 1x" />
+              <img src="img/result-img.jpg" alt="Учебагоу book">
+            </picture>
           </div>
           <div class="results__description">
             <h3 class="results__title">Государственный академический университет гуманитарных наук</h3>
@@ -147,7 +156,10 @@
         </div>
         <div class="results__item">
           <div class="results__item-img-block">
-            <img src="img/result-img.jpg" alt="Фото">
+            <picture>
+              <source srcset="img/result-img2x.jpg 2x, img/result-img.jpg 1x" />
+              <img src="img/result-img.jpg" alt="Учебагоу book">
+            </picture>
           </div>
           <div class="results__description">
             <h3 class="results__title">Государственный академический университет гуманитарных наук</h3>
@@ -157,7 +169,10 @@
         </div>
         <div class="results__item">
           <div class="results__item-img-block">
-            <img src="img/result-img.jpg" alt="Фото">
+            <picture>
+              <source srcset="img/result-img2x.jpg 2x, img/result-img.jpg 1x" />
+              <img src="img/result-img.jpg" alt="Учебагоу book">
+            </picture>
           </div>
           <div class="results__description">
             <h3 class="results__title">Государственный академический университет гуманитарных наук</h3>
@@ -167,7 +182,10 @@
         </div>
         <div class="results__item">
           <div class="results__item-img-block">
-            <img src="img/result-img.jpg" alt="Фото">
+            <picture>
+              <source srcset="img/result-img2x.jpg 2x, img/result-img.jpg 1x" />
+              <img src="img/result-img.jpg" alt="Учебагоу book">
+            </picture>
           </div>
           <div class="results__description">
             <h3 class="results__title">Государственный академический университет гуманитарных наук</h3>
@@ -175,16 +193,21 @@
             <button class="results__btn">Подробнее</button>
           </div>
         </div>
-        <div class="results__item">
-          <div class="results__item-img-block">
-            <img src="img/result-img.jpg" alt="Фото">
-          </div>
-          <div class="results__description">
-            <h3 class="results__title">Государственный академический университет гуманитарных наук</h3>
-            <a href="#/" class="results__division">Юридический факультет</a>
-            <button class="results__btn">Подробнее</button>
-          </div>
-        </div>
+      </div>
+      <div class="division__details-wrapper">
+        <button class="division__details">
+          <span>Загрузить ещё</span>
+          <span>(всего 300 позиций)</з>
+        </button>
+      </div>
+      <div class="pagination">
+        <button class="pagination__btn pagination__btn-prev">Предыдущая</button>
+        <button class="pagination__btn pagination__btn-number active">1</button>
+        <button class="pagination__btn pagination__btn-number">2</button>
+        <button class="pagination__btn pagination__btn-number">3</button>
+        <button class="pagination__btn pagination__btn-number">4</button>
+        <button class="pagination__btn pagination__btn-number">5</button>
+        <button class="pagination__btn pagination__btn-next">Следующая</button>
       </div>
     </section>
     

@@ -1,0 +1,51 @@
+.pagination {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 105px;
+  &__btn {
+    background-color: #eaedfd;
+    color: #1e2d4b;
+    & + & {
+      margin-left: 8px;
+    }
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    border-radius: 2px;
+    background-color: rgb(234, 237, 253);
+    width: 117px;
+    height: 31px;
+    cursor: pointer;
+    color: #1e2d4b;
+    transition: opacity .3s ease;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__btn-number {
+    border-radius: 2px;
+    background-color: rgb(234, 237, 253);
+    width: 30px;
+    height: 31px;
+    cursor: pointer;
+    transition: all .3s ease;
+    &.active {
+      background-image: linear-gradient( 151deg, rgb(111,133,249) 0%, rgb(69,95,237) 99%);
+      box-shadow: 0.4px 4px 9px 0px rgba(109, 131, 247, 0.47);
+      color: #fff;
+      width: 36px;
+      height: 37px;
+    }
+    &:hover {
+      background-image: linear-gradient( 151deg, rgb(111,133,249) 0%, rgb(69,95,237) 99%);
+      color: #fff;
+      opacity: .8;
+    }
+  }
+
+  &__btn-next {
+  }
+}

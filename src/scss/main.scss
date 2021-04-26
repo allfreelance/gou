@@ -17,6 +17,7 @@
 @import "./components/residency";
 @import "./components/store";
 @import "./components/results";
+@import "./components/pagination";
 
 
 
@@ -28,9 +29,6 @@
 body.scroll {
   overflow: hidden;
 }
-.main {
-  padding-top: 51px;
-}
 .line {
   width: 100%;
   height: 12px;
@@ -41,7 +39,7 @@ body.scroll {
   display: block!important;
 }
 .mobile-bottom-menu {
-  display: none;
+  display: block;
 }
 
 @import "./media";

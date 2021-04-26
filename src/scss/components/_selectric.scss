@@ -94,7 +94,7 @@ $selectric-font-size: 17px !default; // Font size
 }
 
 .selectric-open {
-  z-index: 9999;
+  z-index: 9;
   .selectric .button:after {
     transform: rotatex(180deg);
   }
@@ -237,7 +237,7 @@ $selectric-font-size: 17px !default; // Font size
       &::before {
         content: url(../../img/search/check.svg);
         position: absolute;
-        top: 10px;
+        top: 6px;
         left: -9px;
         width: 13px;
         height: 13px;
