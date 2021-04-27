@@ -153,7 +153,6 @@
     padding: 33px 33px;
     margin-bottom: 75px;
     box-shadow: 0.4px 4px 16px 0px rgba(165, 190, 204, 0.28);
-
   }
   &__selects {
     display: flex;
@@ -248,6 +247,7 @@
 
   &__main-custom-checkbox {
     margin-right: 26px;
+    cursor: pointer;
   }
   &__main-custom-checkbox > input {
     position: absolute;
@@ -347,31 +347,34 @@
 }
 .main.main--division {
   padding-top: 0;
+  overflow: hidden;
 }
 .main .search__header--division {
   padding-top: 0;
   align-items: flex-start;
-  margin-bottom: 0;
+  margin-bottom: 35px;
 }
 .main .search__header-right-ad--division {
   margin-top: 0;
-  top: -38px;
 }
 .main .search__main--division {
   margin-bottom: 60px;
-  padding: 33px 15px;
   position: relative;
   background-color: #fff;
 }
 .main .search.search--division {
   margin-bottom: 51px!important;
-  padding-top: 78px;
-  &::before {
+  padding-top: 20px;
+  &::after {
     content: url(../../img/bg-division.jpg);
     position: absolute;
+    right: 0;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
+    width: auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
   }
 }
+

@@ -1127,7 +1127,7 @@
 }));
 //selectric start
 
-$('.select-ege, .select-institution, .select-faculty, .select-city').selectric({
+$('.select-ege, .select-institution, .select-faculty, .select-city, .select-courses, .select-city-courses').selectric({
   disableOnMobile: false,
   nativeOnMobile: false,
 

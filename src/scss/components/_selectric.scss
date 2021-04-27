@@ -110,6 +110,7 @@ $selectric-font-size: 17px !default; // Font size
     width: auto !important;
     max-width: 400px;
     min-width: 100%;
+    height: auto !important;
     &::after {
       content: '';
       position: absolute;
@@ -278,4 +279,6 @@ $selectric-font-size: 17px !default; // Font size
   }
 }
 
-
+.search__select-city .selectric-open .selectric-items {
+  height: 454px !important;
+}

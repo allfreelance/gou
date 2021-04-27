@@ -1,0 +1,165 @@
+.results {
+
+  &__price--courses {
+    position: relative;
+    padding: 25px 20px 20px 22px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 83%;
+      width: 1px;
+      background-color: #e8e8e8;
+    }
+    &::after {
+      content: url(../../img/logo-short.svg);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 120px;
+      width: 120px;
+      z-index: -1;
+    }
+  }
+  
+  &__price-block-wrapper {
+    margin-bottom: 27px;
+  }
+  &__price-remote {
+    margin-bottom: 14px;
+  }
+
+  &__price-block-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1e2d4b;
+    margin-bottom: 3px;
+    margin-left: 36px;
+  }
+
+  &__price-block-costs {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    white-space: nowrap;
+  }
+  
+  &__price-block-cost {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e2d4b;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 36px;
+  }
+
+  &__price-block-fullcost {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e2d4b;
+    text-transform: uppercase;
+    &.discont ~ span::before {
+      content: url(../../img/sale.svg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 15px;
+    }
+  }
+  &__price-block-fullcost.discont {
+    margin-left: 5px;
+  }
+}
+
+
+
+.results__item--courses {
+  min-height: 233px;
+}
+.results__description-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.results__item-img-block--courses {
+  flex: 0 0 262px;
+  width: 262px;
+  height: auto;
+  padding: 15px 20px 20px 20px;
+}
+.results__item-img--courses {
+  width: 130px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.results__item-img-title--courses {
+  font-size: 17px;
+  color: #1e2d4b;
+  font-weight: 400;
+}
+.results__price--courses {
+  flex: 0 0 245px;
+  width: 245px;
+  height: auto;
+}
+.results__btn--courses {
+  width: 200px;
+  height: 50px;
+}
+.results__description-bottom-hours {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 35px;
+  white-space: nowrap;
+  margin-right: 43px;
+  &::before {
+    content: url(../../img/calendar.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 28px;
+  }
+}
+.results__description-bottom-address {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 34px;
+  &::before {
+    content: url(../../img/map.svg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 28px;
+  }
+}
+.results__description--courses {
+  padding: 29px 42px 20px 36px;
+}
+.results__title--courses {
+  letter-spacing: 1.1px;
+  line-height: 31px;
+  margin-bottom: 17px;
+}
+.results__division--courses {
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: 400;
+  margin-bottom: 44px;
+}
+.results__division--courses::before {
+    width: 10px;
+    height: 10px;
+    
+}

@@ -18,6 +18,8 @@
 @import "./components/store";
 @import "./components/results";
 @import "./components/pagination";
+@import "./components/search-courses";
+@import "./components/result-courses";
 
 
 
@@ -40,6 +42,14 @@ body.scroll {
 }
 .mobile-bottom-menu {
   display: block;
+}
+.mobile-bottom-menu.mobile-bottom-menu--division {
+  display: none;
+}
+.discont {
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 @import "./media";
