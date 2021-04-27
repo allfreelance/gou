@@ -2,6 +2,12 @@
   margin-bottom: 51px !important;
   padding-top: 20px;
   position: relative;
+  &__header-left {
+    flex: 1 1 65%;
+    padding-top: 71px;
+    max-width: 870px;
+    margin: 0 auto;
+  }
   &::after {
     content: url(../../img/bg-division.jpg);
     position: absolute;
@@ -231,6 +237,9 @@
 }
 .search__select-city--courses {
   width: 375px;
+}
+.search-courses__select-city .selectric-open .selectric-items {
+  height: 454px!important;
 }
 .search__selects--courses {
   justify-content: flex-start;

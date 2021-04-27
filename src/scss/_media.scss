@@ -95,7 +95,8 @@
   .footer__link {
     margin-right: 10px !important;
   }
-  .main .search__header-left--division {
+  .main .search__header-left--division,
+  .search-courses__header-left {
     flex: 0 0 100%;
     margin-bottom: 25px;
     max-width: 1170px;
@@ -146,14 +147,12 @@
     align-items: center;
   }
   .results__item-img-title--courses {
-    font-size: 12px;
     flex: 1 1 70%;
-    margin-left: 5px;
   }
   .results__item-img--courses {
+    flex: 0 0 auto;
     width: 76px;
     height: 64px;
-    flex: 0 0 24%;
     margin-bottom: 0;
   }
   .results__title.results__title--courses {
@@ -217,6 +216,7 @@
   }
   .results__btn--courses {
     width: 100%;
+    margin-bottom: 20px;
   }
   .results__price--courses::before {
     display: none;
@@ -241,6 +241,71 @@
   .results__description-bottom-address::before {
     width: 17px;
     height: 19px;
+  }
+  .search-courses__main {
+    font-size: 12px;
+  }
+  .search__select-ege--courses,
+  .search__select-city--courses {
+    width: 100%;
+    margin-right: 0;
+    height: 35px;
+  }
+  .search__select-ege--courses {
+    margin-bottom: 18px;
+  }
+  .search-courses__main-custom-checkbox {
+    margin-bottom: 22px;
+  }
+  .search-courses__selects {
+    margin-bottom: 19px;
+  }
+  .search-courses__main-custom-checkbox > span::before,
+  .search-courses__main-custom-checkbox > input:checked + span::before {
+    top: -1px;
+  }
+  .search-courses__checked-items {
+    display: none;
+  }
+  .search__main-checkbox-block--courses {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search__select-btn--courses {
+    position: absolute;
+    bottom: 22px;
+    height: 36px;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .search-courses__select-btn-wrapper {
+    position: relative;
+    top: 325px;
+    width: 100%;
+  }
+  .search-courses__main-checkbox-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .search__main-custom-checkbox--courses > span::before,
+  .search__main-custom-checkbox--courses > input:checked + span::before {
+    width: 15px;
+    height: 16px;
+  }
+  .search__main-custom-checkbox--courses > span {
+    padding-left: 28px;
+  }
+  .search__main-custom-checkbox--courses > input:checked + span::after {
+    width: 9px;
+    height: 9px;
+    top: 3px;
+    left: 3px;
+  }
+  .search-courses__main {
+    padding: 22px 22px 56px;
+    margin-bottom: 67px;
   }
 }
 
@@ -411,6 +476,7 @@
     padding: 22px 22px;
     margin-bottom: 60px;
   }
+
   .search__header-left-title {
     font-size: 23px;
     line-height: 26px;
@@ -499,6 +565,7 @@
   .search__main-custom-checkbox > span {
     padding-left: 24px;
   }
+
   .division__card--bachelor::before,
   .division__card--bachelor:hover::before {
     bottom: 41px;
@@ -842,6 +909,9 @@
   .main .search__header-left--division {
     padding: 35px 15px 20px;
   }
+  .search-courses__header-left {
+    padding: 35px 15px 7px;
+  }
   .main .search.search--division::after {
     content: url(../img/bg-division-mobile.jpg);
     height: 230px;
@@ -852,6 +922,11 @@
   }
   .results__division::before {
     top: 4px;
+  }
+  .search-courses::after {
+    content: url(../img/bg-division-mobile.jpg);
+    height: 230px;
+    overflow: hidden;
   }
 }
 
@@ -1003,9 +1078,48 @@
   .results__btn {
     margin-bottom: 20px;
   }
-
+  .results__item-img--courses {
+    flex: 0 0 24%;
+  }
+  .results__item-img-title--courses {
+    font-size: 12px;
+    flex: 1 1 auto;
+    margin-left: 5px;
+  }
   .pagination {
     display: none;
+  }
+  .pagination-courses {
+    display: block;
+  }
+  .pagination__btn-number {
+    width: 29px;
+    height: 29px;
+  }
+  .pagination__btn-number.active {
+    width: 34px;
+    height: 34px;
+  }
+  .pagination__btn-prev, .pagination__btn-next {
+    width: 38px;
+    height: 29px;
+  }
+  .pagination__btn + .pagination__btn {
+    margin-left: 7px;
+  }
+  .division__details-wrapper::before {
+    display: none;
+  }
+  .division__details-wrapper {
+    height: 49px;
+  }
+  .pagination.pagination-courses {
+    margin-top: 19px;
+    margin-bottom: 40px;
+  }
+  .store.store--courses {
+    margin-top: 0;
+    padding: 24px 0 29px;
   }
 }
 

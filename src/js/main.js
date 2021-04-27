@@ -108,6 +108,44 @@ window.addEventListener('scroll', function(e) {
 
 //mobile menu bottom end
 
+//pagination start
+
+const paginationBtnPrev = document.querySelector('.pagination__btn-prev');
+const paginationBtnNext = document.querySelector('.pagination__btn-next');
+
+function changePrev() {
+  if (screen.width < 576) {
+    paginationBtnPrev.innerHTML = '<';
+    paginationBtnNext.innerHTML = '>';
+  } else {
+    paginationBtnPrev.innerHTML = 'Предыдущая';
+    paginationBtnNext.innerHTML = 'Следующая';
+  }
+}
+
+function changeNext() {
+  if (screen.width > 576) {
+    paginationBtnPrev.innerHTML = 'Предыдущая';
+    paginationBtnNext.innerHTML = 'Следующая';
+  } else {
+    paginationBtnPrev.innerHTML = '<';
+    paginationBtnNext.innerHTML = '>';
+  }
+}
+
+window.addEventListener("resize", function() {
+  if (screen.width < 576) {
+    changePrev();
+  } 
+  if (screen.width >= 576) {
+    changeNext();
+  }
+});
+changeNext();
+changePrev();
+
+//pagination end
+
 // open division start
 
 // const divisionBtn = document.querySelectorAll('.division__details');
