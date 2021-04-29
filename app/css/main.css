@@ -1935,7 +1935,13 @@ button {
   border-style: solid;
   background-color: white;
   box-shadow: 0px 0px 20.16px 0.84px rgba(72, 91, 192, 0.21);
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  position: relative; }
+  .request::before {
+    content: url(../../img/landing/points_bg.png);
+    position: absolute;
+    top: 250%;
+    right: 0; }
   .request__title {
     position: relative;
     font-size: 22px;
@@ -2106,7 +2112,8 @@ button {
   .request-consult__body-title {
     font-size: 20px;
     color: #b6beeb;
-    flex: 1 1 100%;
+    flex: 1 1 100%; }
+  .request-consult__body-title:nth-child(2) {
     margin-bottom: 20px; }
   .request-consult__label-checkbox {
     flex: 1 1 auto;
@@ -2294,6 +2301,12 @@ button {
 
 .request__label-checkbox > input:disabled + span::before {
   background-color: #e9ecef; }
+
+.main-landing::before {
+  content: url(../../img/landing/points-03.png);
+  position: absolute;
+  top: 164%;
+  right: 0; }
 
 .advantage__wrapper {
   display: flex;
@@ -2668,26 +2681,29 @@ button {
     width: 27px;
     height: 44px; }
 
-.comments.container {
-  padding: 0; }
-
-.comments__wrapper {
-  padding: 58px 0 0 0; }
-
-.comments__title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #ff3c46;
-  text-align: center;
-  position: relative;
-  margin-bottom: 53px; }
-  .comments__title::before {
-    content: url(../../img/landing/line-dashed.png);
-    position: absolute;
-    bottom: -28px;
-    left: 46%; }
-  .comments__title span {
-    color: #000; }
+.comments {
+  background-image: url(../../img/landing/map-new.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 33px 0 0 0;
+  margin-top: 24px;
+  height: 590px; }
+  .comments .container {
+    padding: 0; }
+  .comments__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff3c46;
+    text-align: center;
+    position: relative;
+    margin-bottom: 53px; }
+    .comments__title::before {
+      content: url(../../img/landing/line-dashed.png);
+      position: absolute;
+      bottom: -28px;
+      left: 46%; }
+    .comments__title span {
+      color: #000; }
 
 .comments-slider {
   padding: 0 5px;

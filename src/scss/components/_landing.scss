@@ -85,6 +85,13 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 20.16px 0.84px rgba(72, 91, 192, 0.21);
   margin-bottom: 60px;
+  position: relative;
+  &::before {
+    content: url(../../img/landing/points_bg.png);
+    position: absolute;
+    top: 250%;
+    right: 0;
+  }
   &__title {
     position: relative;
     font-size: 22px;
@@ -287,6 +294,8 @@
     font-size: 20px;
     color: #b6beeb;
     flex: 1 1 100%;
+  }
+  &__body-title:nth-child(2) {
     margin-bottom: 20px;
   }
   &__label-checkbox {
@@ -515,4 +524,11 @@
 }
 .request__label-checkbox > input:disabled + span::before {
   background-color: #e9ecef;
+}
+
+.main-landing::before {
+  content: url(../../img/landing/points-03.png);
+  position: absolute;
+  top: 164%;
+  right: 0;
 }

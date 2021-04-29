@@ -1,10 +1,15 @@
 .comments {
-
-  &.container {
+  background-image: url(../../img/landing/map-new.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 33px 0 0 0;
+  margin-top: 24px;
+  height: 590px;
+  .container {
     padding: 0;
   }
   &__wrapper {
-    padding: 58px 0 0 0;
+    
   }
 
   &__title {
