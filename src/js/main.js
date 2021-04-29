@@ -1,6 +1,6 @@
 //selectric start
 
-$('.select-ege, .select-institution, .select-faculty, .select-city, .select-courses, .select-city-courses').selectric({
+$('.select-ege, .select-institution, .select-faculty, .select-city, .select-courses, .select-city-courses, .filter-price__select').selectric({
   disableOnMobile: false,
   nativeOnMobile: false,
 
@@ -134,28 +134,70 @@ function changeNext() {
 }
 
 window.addEventListener("resize", function() {
-  if (screen.width < 576) {
-    changePrev();
-  } 
-  if (screen.width >= 576) {
-    changeNext();
+  if (paginationBtnPrev && paginationBtnNext) {
+    
+    if (screen.width < 576) {
+      changePrev();
+    } 
+    if (screen.width >= 576) {
+      changeNext();
+    }
   }
 });
-changeNext();
-changePrev();
+if (paginationBtnPrev && paginationBtnNext) {
+  changeNext();
+  changePrev();
+}
 
 //pagination end
 
-// open division start
+//slider swiper start
 
-// const divisionBtn = document.querySelectorAll('.division__details');
+const swiper = new Swiper('.university-slider', {
 
-// for (let i = 0; i < divisionBtn.length; i++) {
-//   divisionBtn[i].addEventListener('click', function() {
-//     let parentDivision = this.closest('.division');
-//     let divisionWrapper = parentDivision.querySelector('.division__cards-wrapper');
-//     divisionWrapper.classList.toggle('open');
-//   })
-// }
-// open division end
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+const galleryThumbs = new Swiper('.gallery-thumbs', {
+  direction: 'vertical',
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+const galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
+
+const swiperComments = new Swiper('.comments-slider', {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+//slider swiper end

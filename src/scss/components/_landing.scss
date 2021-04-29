@@ -1,0 +1,518 @@
+.landing {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: url(../../img/landing/fon-01.png);
+    position: absolute;
+    top: 4px;
+    left: 3%;
+    z-index: -1;
+  }
+  &::after {
+    content: url(../../img/landing/fon-02.png);
+    position: absolute;
+    top: -58px;
+    right: 2%;
+    z-index: -1;
+  }
+  .search__breadcrumb {
+    margin-bottom: 23px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+    margin-bottom: 23px;
+    position: relative;
+  }
+
+  &__header-left {
+    flex: 1 1 65%;
+    padding-top: 42px;
+  }
+
+  &__header-left-status {
+    position: relative;
+    width: 235px;
+    height: 45px;
+    margin-bottom: 41px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 67px;
+      height: 2px;
+      background-color: #455fed;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__header-left-title {
+    line-height: 52px;
+    color: #ff3c46;
+    font-size: 46px;
+    font-weight: 700;
+    span {
+      color: #1e2d4b;
+    }
+  }
+
+  &__header-right {
+    flex: 0 0 370px;
+    width: 370px;
+    height: 370px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//form request
+
+.request {
+  display: flex;
+  padding: 35px 49px;
+  height: 208px;
+  border-width: 1px;
+  border-color: rgb(182, 190, 235);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20.16px 0.84px rgba(72, 91, 192, 0.21);
+  margin-bottom: 60px;
+  &__title {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    color: #455fed;
+    flex: 0 0 325px;
+    padding: 21px 20px 0 0;
+    width: 225px;
+    line-height: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 5px;
+      top: 10px;
+      left: -51px;
+      width: 4px;
+      height: 114px;
+      background-color: #455fed;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 5px;
+      top: 0px;
+      right: 50px;
+      width: 1px;
+      height: 136px;
+      background-color: #b6beeb;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    input {
+      color: #1e2d4b;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      flex: 0 0 33%;
+      width: 235px;
+      height: 60px;
+      position: relative;
+      padding: 20px 35px 20px 25px;
+      border-width: 1px;
+      border-color: rgb(217, 230, 235);
+      border-style: solid;
+      border-radius: 3px;
+      background-color: rgb(255, 255, 255);
+    }
+    input[type="checkbox"] ~ a {
+      position: relative;
+      display: inline-block;
+      color: #4f6daa;
+      margin-left: 32px;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #6575cc;
+      }
+    }
+    input:focus {
+      border: 3px solid #ecedf6;
+      outline: none;
+    }
+    input::placeholder {
+      color: #1e2d4b;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    label {
+      font-size: 16px;
+      color: #1e2d4b;
+      margin-bottom: 15px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+  &__label-name {
+    &::after {
+      content: url(../../img/landing/user.svg);
+      position: absolute;
+      right: -6px;
+      top: 9px;
+      width: 35px;
+      height: 47px;
+    }
+  }
+  &__label-email {
+    &::after {
+      content: url(../../img/landing/mail.svg);
+      position: absolute;
+      right: -15px;
+      top: 9px;
+      width: 44px;
+      height: 56px;
+    }
+  }
+  &__label-tel {
+    &::after {
+      content: url(../../img/landing/phone.svg);
+      position: absolute;
+      right: -16px;
+      top: 8px;
+      width: 45px;
+      height: 50px;
+    }
+  }
+  &__label-checkbox {
+    flex: 0 0 45%;
+    padding-top: 12px;
+  }
+
+  &__body-btn {
+    flex: 0 0 354px;
+    position: relative;
+    background-color: #ff3c46;
+    width: 354px;
+    height: 60px;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    padding-right: 35px;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0.4px 4px 16px 0px rgba(255, 60, 70, 0.28), inset -1px -3px 0px 0px rgba(209, 28, 37, 0.004),
+      inset -2px -4px 1px 0px #d11c25;
+    &:hover {
+      box-shadow: 0.4px 4px 16px 0px rgba(255, 60, 70, 0.28), inset -1px -3px 0px 0px rgba(209, 28, 37, 0.004),
+        inset 0px 0px 0px 0px #d11c25;
+      background-color: #fc525b;
+    }
+    &-span {
+      position: relative;
+      &::after {
+        content: url(../../img/landing/sent.png);
+        position: absolute;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+.request-consult {
+  background-image: url(../../img/landing/consult.jpg);
+  background-repeat: no-repeat;
+  box-shadow: none;
+  border: none;
+  height: 270px;
+  padding: 45px 49px;
+  margin-top: 84px;
+  margin-bottom: 70px;
+  &-second {
+    margin-top: 78px;
+    margin-bottom: 66px;
+  }
+  &__wrapper {
+    display: flex;
+    margin-bottom: 60px;
+  }
+  &__body {
+    padding: 9px 0px 0 66px;
+    position: relative;
+    &::before {
+      content: url(../../img/landing/operator.png);
+      position: absolute;
+      top: 78px;
+      left: -99px;
+    }
+  }
+  &__body label {
+    margin-bottom: 12px;
+  }
+  &__title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 42px;
+    span {
+      color: #ff3c46;
+    }
+  }
+  &__title::after {
+    right: -12px;
+    height: 177px;
+  }
+  &__title::before {
+    display: none;
+  }
+  &__body-title {
+    font-size: 20px;
+    color: #b6beeb;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  &__label-checkbox {
+    flex: 1 1 auto;
+    line-height: 15px;
+    span {
+      color: #b6beeb;
+    }
+  }
+  input[type="checkbox"] ~ a {
+    color: #7c8ce6;
+    margin-left: 5px;
+  }
+  input[type="text"], 
+  input[type="email"], 
+  input[type="tel"] {
+    width: 178px;
+    height: 50px;
+    padding: 20px 35px 20px 20px;
+  }
+  input::placeholder {
+    font-size: 15px;
+  }
+  &__label-name::after {
+    right: -5px;
+    top: 5px;
+  }
+  &__label-email::after {
+    right: -15px;
+    top: 5px;
+    width: 42px;
+  }
+  &__label-tel::after {
+    right: -16px;
+    top: 3px;
+  }
+  &__body-btn {
+    flex: 0 0 204px;
+    width: 204px;
+    height: 51px;
+    font-size: 15px;
+  }
+}
+
+//rate
+
+.landing {
+  counter-reset: count;
+  &__rate {
+    margin-bottom: 60px;
+  }
+
+  &__rate-items {
+    display: flex;
+  }
+
+  &__rate-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    padding: 30px 10px 52px 30px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      border-radius: 10px;
+      background-color: #9953e2;
+    }
+    &-bachelor::before {
+      background-color: #427dee;
+    }
+    &-magistry::before {
+      background-color: #1fc4be;
+    }
+    &-graduate::before {
+      background-color: #ef9f43;
+    }
+  }
+
+  &__rate-title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e2d4b;
+    margin-bottom: 53px;
+    &::after {
+      counter-increment: count;
+      content: "0"counter(count);
+      position: absolute;
+      top: -14px;
+      right: 28px;
+      font-size: 99px;
+      font-weight: 700;
+      color: #f8f9fa;
+      z-index: -1;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -29px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      border-radius: 10px;
+      background-color: #9953e2;
+    }
+  }
+  &__rate-bachelor::before {
+    background-color: #427dee;
+  }
+  &__rate-magistry::before {
+    background-color: #1fc4be;
+  }
+  &__rate-graduate::before {
+    background-color: #ef9f43;
+  }
+  &__rate-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e2d4b;
+    margin-bottom: 7px;
+    line-height: 22px;
+  }
+
+  &__rate-timing {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9953e2;
+    padding-left: 24px;
+    margin-top: auto;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      left: 1px;
+      width: 16px;
+      height: 1px;
+      border-radius: 10px;
+      background-color: #9953e2;
+    }
+  }
+  &__rate-timing-bachelor {
+    color: #427dee;
+    &::before {
+      background-color: #427dee;
+    }
+  }
+  &__rate-timing-magistry {
+    color: #1fc4be;
+    &::before {
+      background-color: #1fc4be;
+    }
+  }
+  &__rate-timing-graduate {
+    color: #ef9f43;
+    &::before {
+      background-color: #ef9f43;
+    }
+  }
+
+}
+
+.search__title--labding {
+  margin-bottom: 29px;
+}
+
+.request__label-checkbox {
+  
+}
+
+.request__label-checkbox {
+  margin-right: 26px;
+  cursor: pointer;
+}
+.request__label-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.request__label-checkbox > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  position: relative;
+  padding-left: 32px;
+}
+.request__label-checkbox > span::before {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+.request__label-checkbox > input:not(:disabled):active + span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.request__label-checkbox > input:checked + span::before {
+  content: url(../../img/landing/check.svg);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+.request__label-checkbox > input:disabled + span::before {
+  background-color: #e9ecef;
+}

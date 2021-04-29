@@ -1,0 +1,215 @@
+.comments {
+
+  &.container {
+    padding: 0;
+  }
+  &__wrapper {
+    padding: 58px 0 0 0;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff3c46;
+    text-align: center;
+    position: relative;
+    margin-bottom: 53px;
+    &::before {
+      content: url(../../img/landing/line-dashed.png);
+      position: absolute;
+      bottom: -28px;
+      left: 46%;
+    }
+    span {
+      color: #000;
+    }
+  }
+}
+
+.comments-slider {
+  padding: 0 5px;
+  height: 222px;
+}
+.swiper-slide-img-wrapper {
+  position: relative;
+  height: 117px;
+  width: 117px;
+  border-radius: 50%;
+  flex: 0 0 117px;
+  img {
+    position: relative;
+    z-index: 10;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 60, 70);
+    opacity: 0.212;
+    width: 116px;
+    height: 117px;
+    top: -5px;
+    left: -8px;
+    transition: all .3s ease;
+  }
+}
+.swiper-slide-comments {
+  display: flex;
+  position: relative;
+  box-shadow: 0px 0px 12.48px 0.52px rgba(72, 91, 192, 0.07), 6px 6px 3px 0px #dce0fa;
+  flex: 0 0 359px;
+  width: 359px;
+  height: 163px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  overflow: hidden;
+  transition: all .3s ease;
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 12.48px 0.52px rgba(72, 91, 192, 0.07), 6px 6px 3px 0px #f3d3d7;
+    .swiper-slide-person-btn,
+    &::before {
+      background-color: #ff3c46;
+    }
+    .swiper-slide-img-wrapper::before {
+      background-color: #d8ddfb;
+    }
+    .swiper-slide-person-btn {
+      width: 211px;
+      height: 140px;
+      &::after {
+        content: 'Смотреть';
+        position: absolute;
+        top: 23px;
+        left: 35px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+      }
+      &::before {
+        left: 106px;
+      }
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 164px;
+    border-radius: 6px;
+    background-color: rgb(69, 95, 237);
+    width: 102px;
+    height: 5px;
+    transition: all .3s ease;
+  }
+  
+}
+.swiper-slide-person-data {
+  padding: 17px 10px 20px 25px;
+  position: relative;
+  &::after {
+    content: url(../../img/landing/play.png);
+    position: absolute;
+    bottom: -5%;
+    right: -3%;
+    z-index: 10;
+    width: 17px;
+    height: 19px;
+    pointer-events: none;
+  }
+}
+.swiper-slide-person-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #2f4adc;
+}
+.swiper-slide-person-occupation {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1e2d4b;
+  
+}
+.swiper-pagination {
+}
+.comments .swiper-button-prev {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.89;
+  box-shadow: 0px 0px 12.48px 0.52px rgba(111, 126, 221, 0.23);
+  width: 36px;
+  height: 37px;
+  top: -130px;
+  left: -.6%;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .7;
+  }
+  &::after {
+    content: url(../../img/landing/prev-arrow.svg);
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    width: 17px;
+    height: 13px;
+  }
+}
+.comments .swiper-button-next {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.89;
+  box-shadow: 0px 0px 12.48px 0.52px rgba(111, 126, 221, 0.23);
+  width: 36px;
+  height: 37px;
+  top: -130px;
+  right: -93.7%;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .7;
+  }
+  &::after {
+    content: url(../../img/landing/next-arrow.svg);
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    width: 17px;
+    height: 13px;
+  }
+}
+.comments .swiper-button-disabled {
+  opacity: .5;
+}
+.comments .swiper-pagination-bullets span{
+  background-color: rgb(209, 209, 209);
+  width: 27px;
+  height: 3px;
+  border-radius: 0;
+}
+.comments .swiper-pagination-bullet-active{
+  background-color: #8c9cf2!important;
+}
+.swiper-slide-person-btn {
+  position: absolute;
+  top: 66%;
+  right: -21%;
+  border-radius: 50%;
+  background-color: rgb(154, 168, 245);
+  width: 139px;
+  height: 140px;
+  cursor: pointer;
+  transition: all .3s ease;
+  &:hover {
+    opacity: .7;
+  }
+
+}

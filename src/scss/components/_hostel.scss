@@ -1,0 +1,200 @@
+.hostel {
+
+  &__wrapper {
+    height: 625px;
+  }
+  &__body {
+    display: flex;
+    position: relative;
+  }
+  &__title-block {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1e2d4b;
+    position: relative;
+    margin-bottom: 31px;
+    margin-right: 16px;
+    &::before {
+      content: url(../../img/landing/line-dashed.png);
+      position: absolute;
+      bottom: -29px;
+      left: 100px;
+    }
+    &::after {
+      content: url(../../img/landing/hostel-on.svg);
+      position: absolute;
+      bottom: 27px;
+      right: -44px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #1e2d4b;
+  }
+
+  &__content {
+    flex: 0 0 55%;
+    width: 50%;
+  }
+
+  &__slider-wrapper {
+  }
+  &__slider-img-block {
+    
+  }
+  &__description-block {
+    padding: 20px 0px 10px 26px;
+  }
+
+  &__description-item {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    &:first-child {
+      height: 88px;
+      background-color: #f6f7fa;
+      padding: 20px 50px 20px 30px;
+      margin-bottom: 20px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #455fed;
+      }
+      &::after {
+        content: url(../../img/landing/location-hostes.svg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60px;
+        height: 70px;
+      }
+    }
+    &:nth-child(2) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+
+//slider swiper
+.hostel .swiper-wrapper {
+  width: 115px;
+  height: 370px;
+  top: 35px;
+  left: 15px;
+  margin: 0;
+}
+.hostel .swiper-container {
+  width: 100%;
+  margin: 0;
+}
+
+.hostel .gallery-top .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  height: 370px;
+}
+
+.hostel .swiper-slide {
+  width: 115px;
+  cursor: pointer;
+}
+.swiper-container.gallery-thumbs .swiper-slide {
+  opacity: .5;
+}
+.swiper-container.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.hostel .gallery-top {
+  flex: 0 0 522px;
+  width: 522px;
+  height: 461px;
+  position: relative;
+  &::before {
+    content: url(../../img/landing/photo-cover-hostel.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.swiper-container-pointer-events.swiper-container-vertical {
+  left: 82%;
+  top: -370px;
+  width: 115px;
+  height: 245px;
+}
+.swiper-container.gallery-thumbs .swiper-slide:not(:first-child) {
+  margin-top: 0px;
+}
+.swiper-container.gallery-thumbs .swiper-wrapper {
+  top: 0;
+  left: 0;
+}
+
+.hostel .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: rgb(154, 168, 245);
+  border-style: solid;
+  background-color: rgb(246, 247, 253);
+  box-shadow: 0.418px 3.978px 16px 0px rgba(154, 168, 245, 0.42);
+  width: 113px;
+  height: 62px;
+  right: 44.8%;
+  top: 52%;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .8;
+  }
+  &::after {
+    content: url(../../img/landing/down-arrow.svg);
+    position: absolute;
+    width: 27px;
+    height: 50px;
+  }
+}
+.hostel .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: rgb(154, 168, 245);
+  border-style: solid;
+  background-color: rgb(246, 247, 253);
+  box-shadow: 0.418px 3.978px 16px 0px rgba(154, 168, 245, 0.42);
+  width: 113px;
+  height: 62px;
+  left: 45.3%;
+  top: 39px;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .8;
+  }
+  &::after {
+    content: url(../../img/landing/up-arrow.svg);
+    position: absolute;
+    width: 27px;
+    height: 44px;
+  }
+}

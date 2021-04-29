@@ -175,6 +175,18 @@
   }
   .results__description-bottom {
     flex-wrap: wrap;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-bottom: 1px dashed #f0f0f0;
+    }
+  }
+  .results__division--courses::after {
+    bottom: -20px;
   }
   .results__description-bottom-hours,
   .results__description-bottom-address {
@@ -307,6 +319,7 @@
     padding: 22px 22px 56px;
     margin-bottom: 67px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -928,17 +941,82 @@
     height: 230px;
     overflow: hidden;
   }
+  //filter price {
+.filter-price {
+  display: block;
+  margin-bottom: 20px!important;
+}
+.filter-price__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+}
+.filter-price-title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 14px;
+}
+.filter-price .selectric-items li.selected::before {
+  display: none;
+}
+.filter-price .selectric-items ul, .selectric-items li {
+  font-size: 12px;
+  width: 100%;
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px dashed #f0f0f0;
+  }
+}
+  .filter-price .selectric-items ul {
+    padding: 0px 0px 0px 0px;
+  }
+  .filter-price .selectric .button {
+    top: -3px;
+  }
+  .selectric-wrapper.selectric-selectric.selectric-filter-price__select.selectric-below.selectric-hover,
+  .selectric-wrapper.selectric-selectric.selectric-filter-price__select.selectric-below,
+  .selectric-wrapper.selectric-selectric.selectric-filter-price__select {
+    width: 198px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .mobile-bottom-menu--landing {
+    display: block;
+  }
 }
 
 @media (max-width: 576px) {
-  .search::before {
+  .search::before,
+  .search-courses::before {
     content: "";
     position: absolute;
-    bottom: 67px;
+    bottom: 88px;
     left: 0;
     height: 5px;
     width: 100%;
     background-color: #f3f5ff;
+  }
+  .search.search--division::before,
+  .search-courses::before {
+    bottom: 67px;
   }
   .search__title {
     max-width: 240px;
@@ -1066,7 +1144,7 @@
   .results__item-img-block {
     flex: 0 0 100%;
     width: 100%;
-    max-height: 125px;
+    max-height: auto;
   }
   .results__title {
     margin-bottom: 10px;
@@ -1114,6 +1192,9 @@
     height: 49px;
   }
   .pagination.pagination-courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 19px;
     margin-bottom: 40px;
   }

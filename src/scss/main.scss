@@ -20,6 +20,11 @@
 @import "./components/pagination";
 @import "./components/search-courses";
 @import "./components/result-courses";
+@import "./components/landing";
+@import "./components/advantage";
+@import "./components/university";
+@import "./components/hostel";
+@import "./components/comments";
 
 
 
@@ -46,10 +51,16 @@ body.scroll {
 .mobile-bottom-menu.mobile-bottom-menu--division {
   display: none;
 }
+.mobile-bottom-menu--landing {
+  display: none;
+}
 .discont {
   text-decoration: line-through;
   font-weight: 400;
   font-size: 14px;
+}
+.filter-price {
+  display: none;
 }
 
 @import "./media";

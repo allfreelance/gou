@@ -1,0 +1,78 @@
+.advantage {
+  &__wrapper {
+    display: flex;
+    margin-bottom: 46px;
+  }
+
+  &__img-block {
+    flex: 0 0 541px;
+    height: 597px;
+    position: relative;
+    margin-left: -23px;
+    &::before {
+      content: url(../../img/landing/photo-cover-2.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    picture {
+      height: 509px;
+      width: 468px;
+      object-fit: cover;
+      position: absolute;
+      top: 47px;
+      left: 52px;
+    }
+  }
+  &__description {
+    flex: 1 1 auto;
+    padding: 32px 20px 0px 65px;
+  }
+
+  &__description-title {
+    font-size: 48px;
+    color: #ff3c46;
+    width: 390px;
+    margin-bottom: 32px;
+    position: relative;
+    line-height: 50px;
+    span {
+      color: #1e2d4b;
+    }
+    &::after {
+      content: url(../../img/landing/line-dashed.png);
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+    }
+  }
+
+  &__description-items {
+  }
+
+  &__description-item {
+    position: relative;
+    font-size: 20px;
+    color: #1e2d4b;
+    padding-left: 32px;
+    line-height: 34px;
+    &::before {
+      content: url(../../img/landing/check-advantage.svg);
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &__description-text {
+    font-size: 20px;
+    color: #000;
+    line-height: 24px;
+  }
+}
