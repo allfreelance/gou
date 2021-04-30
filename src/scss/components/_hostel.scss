@@ -48,6 +48,17 @@
   }
 
   &__slider-wrapper {
+    picture {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      left: 0;
+      bottom: 0;
+      border: 14px solid #f5f7fa;
+    }
   }
   &__slider-img-block {
     
@@ -197,4 +208,7 @@
     width: 27px;
     height: 44px;
   }
+}
+.swiper-container.gallery-thumbs .swiper-slide img {
+  border: 14px solid #f5f7fa;
 }

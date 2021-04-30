@@ -155,9 +155,10 @@ if (paginationBtnPrev && paginationBtnNext) {
 
 const swiper = new Swiper('.university-slider', {
 
-  loop: true,
+  // loop: true,
+  spaceBetween: 20,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination.swiper-pagination-number, .swiper-pagination.swiper-pagination-number',
     clickable: true,
   },
 

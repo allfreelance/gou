@@ -47,27 +47,40 @@
     
   }
   &__img-block {
-    flex: 0 0 541px;
+    overflow: hidden;
+    flex: 0 0 48%;
     height: 597px;
     position: relative;
-    margin-left: 20px;
-    overflow: hidden;
+    margin-left: -23px;
+    background-image: url(../../img/landing/photo-cover-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 47px 34px 44px 54px;
     &::before {
-      content: url(../../img/landing/photo-cover-1.png);
+      content: url(../../img/landing/watch-video.jpg);
+      position: absolute;
+      bottom: 8px;
+     left: 40px;
+      z-index: 10;
+    }
+    picture {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
+      left: 0;
+      bottom: 0;
+      border: 14px solid #f5f7fa;
     }
-    picture {
-      height: 509px;
-      width: 468px;
+    img {
       object-fit: cover;
-      position: absolute;
-      top: 47px;
-      left: 52px;
+      height: 100%;
     }
   }
+
   &__statistic {
     display: flex;
     margin-bottom: 32px;  
@@ -136,9 +149,9 @@
 //slider swiper
 .university .swiper-wrapper {
   width: 100%;
-  height: 597px;
-  top: 47px;
-  left: 54px;
+  height: 513px;
+  top: 0px;
+  left: 0;
 }
 .university .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
 .university .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
@@ -160,4 +173,13 @@
 }
 .university .swiper-pagination-bullet-active {
   background-color: #8396fa;
+}
+.swiper-container.university-slider {
+  width: 470px;
+}
+.university .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  position: relative;
+  z-index: 10000;
+  bottom: 3px;
+  left: -7px;
 }

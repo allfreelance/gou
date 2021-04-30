@@ -1,3 +1,8 @@
+@media (max-width: 1270px) {
+  .request-consult__body-btn {
+    flex: 0 1 100%;
+  }
+}
 @media (max-width: 1170px) {
   .search__header-right-ad {
     background-image: url(../img/mobile/ad.jpg);
@@ -320,6 +325,304 @@
     margin-bottom: 67px;
   }
 
+  //landing start
+  .request {
+    flex-direction: column;
+    height: auto;
+    padding: 18px 22px 22px 22px;
+    margin-bottom: 7px;
+  }
+  .request__title {
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 0 0 auto;
+    margin-bottom: 39px;
+    line-height: 15px;
+    padding: 0;
+  }
+  .request__title::after {
+    top: 50px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+  }
+  .request__title::before {
+    top: 1px;
+    left: -23px;
+    width: 2px;
+    height: 27px;
+  }
+  .request__body {
+    flex-direction: column;
+  }
+  .request__body input {
+    font-size: 12px;
+  }
+  .request__body input::placeholder {
+    font-size: 12px;
+  }
+  .request__body input[type="text"], .request__body input[type="email"], .request__body input[type="tel"] {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    height: 32px;
+    padding: 0px 35px 0px 13px;
+  }
+  .request__body input:focus {
+    border: 1px solid #455fed;
+    outline: none;
+  }
+  .request__body .request__label-checkbox {
+    font-size: 10px;
+    line-height: 11px;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .request__body label {
+    width: 100%;
+  }
+  .request__body-btn {
+    flex: 1 1 auto;
+    height: 35px;
+    width: 100%;
+    font-size: 12px;
+  }
+  .request__body-btn-span::after {
+    content: url(../../img/landing/sent-small.png);
+    position: absolute;
+    padding-left: 15px;
+  }
+  .main-landing::before,
+  .landing::before,
+  .landing::after {
+    display: none;
+  }
+  .landing__header-left-status {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 19px;
+  }
+  .landing__header-left-status::after {
+    width: 34px;
+    bottom: -14px;
+  }
+  .landing__header-left-title {
+    font-size: 23px;
+    line-height: 26px;
+  }
+  .landing__header-right {
+    flex: 0 0 180px;
+    width: 180px;
+    height: 180px;
+  }
+  .landing .search__breadcrumb {
+    padding-top: 5px;
+    margin-bottom: 11px;
+  }
+  .landing .search__breadcrumb-item:not(:last-child)::after {
+    right: -8px;
+  }
+  .landing__header-left {
+    padding-top: 0;
+    margin-right: 22px;
+  }
+  .landing__header {
+    height: 187px;
+  }
+  .request__label-name::after {
+    right: 5px;
+    top: 3px;
+    width: 20px;
+    height: 47px;
+  }
+  .request__label-email::after {
+    right: 5px;
+    top: 6px;
+    width: 20px;
+  }
+  .request__label-tel::after {
+    right: 5px;
+    top: 6px;
+    width: 20px;
+  }
+  .landing .request__label-tel {
+    margin-bottom: 11px;
+  }
+  
+  .landing__rate-items {
+    flex-direction: column;
+  }
+  .landing__rate-title {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+  .landing__rate-description{
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  .landing__rate-timing {
+    font-size: 13px;
+    padding-left: 16px;
+  }
+  .landing__rate-timing::before {
+    width: 8px;
+    bottom: 6px;
+  }
+  .landing__rate-title::before {
+    width: 40px;
+    height: 2px;
+    bottom: -13px;
+  }
+  .landing__rate-item {
+    padding: 19px 10px 21px 22px;
+  }
+  .landing__rate-title::after {
+    font-size: 60px;
+    right: 17px;
+  }
+  .request::before {
+    display: none;
+  }
+  .landing__rate  {
+    margin-bottom: 28px;
+  }
+  .request-consult {
+    background-image: none;
+    background-color: #2c41b1;
+    margin-top: 31px;
+    margin-bottom: 15px;
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 5px;
+      top: 101px;
+      right: 0;
+      left: 0;
+      width: 90%;
+      height: 1px;
+      margin: 0 auto;
+      background-color: #b6beeb;
+    }
+  }
+  .request-consult__wrapper {
+    flex-direction: column;
+  }
+  .request-consult__title {
+    font-size: 22px;
+    line-height: 21px;
+    width: 200px;
+  }
+  .request-consult__body-title {
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+  }
+  .request-consult__body {
+    padding: 0;
+  }
+  .request-consult__title::after {
+    display: none;
+  }
+  .request-consult__body label {
+    margin-bottom: 14px;
+  }
+  .request-consult__body-btn {
+    order: 1;
+  }
+
+  .advantage__description-title {
+    font-size: 24px;
+    line-height: 25px;
+    width: auto;
+  }
+  .advantage__description-item {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .advantage__img-block {
+    padding: 24px 22px 22px 37px;
+    flex: 0 0 290px;
+    width: 290px;
+    height: 100%;
+  }
+  .advantage__wrapper {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .request__title.request-consult__title {
+    &::before {
+      content: url(../img/landing/operator.png);
+      position: absolute;
+      display: block;
+      top: 6%;
+      left: 87%;
+    }
+  }
+  .request-consult__body::before {
+    display: none;
+  }
+  .university__wrapper {
+    flex-direction: column;
+  }
+  .university__description-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .university__description-text {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 22px;
+  }
+  .university__statistic-name-value {
+    font-size: 28px;
+    white-space: nowrap;
+    flex: 0 0 106px;
+  }
+  .university__statistic-name-title {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .university__download {
+    font-size: 13px;
+    width: 100%;
+    height: 30px;
+  }
+  .university__statistic {
+    flex-direction: column;
+    margin-bottom: 2px;
+  }
+  .university__description-text:nth-child(3)::after {
+    display: none;
+  }
+  .university__description-title::after {
+    transform: scale(.5);
+    bottom: -21px;
+    left: -25px;
+  }
+  .university__statistic-name {
+    display: flex;
+    align-items: center;
+  }
+  .university__statistic-item {
+    flex: 0 0 67px;
+  }
+  .university__statistic-item-icon {
+    flex: 0 0 53px;
+    width: 53px;
+  }
+  .university__statistic-item-icon::before {
+    width: 22px;
+    height: 22px;
+    top: 20px;
+    left: 23px;
+  }
+  .hostel__body {
+    flex-direction: column;
+  }
+  //landing end
 }
 
 @media (max-width: 768px) {
@@ -1001,6 +1304,55 @@
   .mobile-bottom-menu--landing {
     display: block;
   }
+  
+  //landing {
+  .advantage__wrapper {
+    flex-direction: column;
+  }
+  .advantage__img-block picture {
+    border: 7px solid #f5f7fa;
+  }
+
+  .advantage__description {
+    padding: 0 0 0 0;
+  }
+  .advantage__img-block {
+    margin-bottom: 6px;
+    margin: 0 auto 8px;
+    left: -10px;
+  }
+  .advantage__description-title {
+    padding-right: 20px;
+    margin-bottom: 16px;
+  }
+  .advantage__description-title::after {
+    bottom: -19px;
+    left: -25px;
+    transform: scale(0.5);
+  }
+  .advantage__description-item::before {
+    width: 9px;
+    height: 9px;
+    top: 1px;
+    left: 4px;
+  }
+  .advantage__description-item {
+    padding-left: 21px;
+  }
+  .university .swiper-wrapper {
+    height: 255px;
+  }
+  .swiper-container.university-slider {
+    width: 235px;
+  }
+  .university__img-block {
+    flex: 0 0 300px;
+    height: 310px;
+    padding: 28px 5px 4px 22px;
+  }
+  .university__img-block picture {
+    border: 7px solid #f5f7fa;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1185,12 +1537,12 @@
   .pagination__btn + .pagination__btn {
     margin-left: 7px;
   }
-  .division__details-wrapper::before {
-    display: none;
-  }
-  .division__details-wrapper {
-    height: 49px;
-  }
+  // .division__details-wrapper::before {
+  //   display: none;
+  // }
+  // .division__details-wrapper {
+  //   height: 49px;
+  // }
   .pagination.pagination-courses {
     display: flex;
     justify-content: space-between;

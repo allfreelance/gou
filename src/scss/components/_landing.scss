@@ -151,7 +151,6 @@
       position: relative;
       display: inline-block;
       color: #4f6daa;
-      margin-left: 32px;
       &::before {
         content: "";
         width: 100%;
@@ -275,6 +274,7 @@
     margin-bottom: 12px;
   }
   &__title {
+    position: relative;
     font-size: 44px;
     font-weight: 700;
     color: #fff;
@@ -307,7 +307,6 @@
   }
   input[type="checkbox"] ~ a {
     color: #7c8ce6;
-    margin-left: 5px;
   }
   input[type="text"], 
   input[type="email"], 
@@ -466,11 +465,6 @@
 .search__title--labding {
   margin-bottom: 29px;
 }
-
-.request__label-checkbox {
-  
-}
-
 .request__label-checkbox {
   margin-right: 26px;
   cursor: pointer;
@@ -516,7 +510,6 @@
   position: absolute;
   display: flex;
   align-items: center;
-  // justify-content: center;
   top: 0;
   left: 0;
   width: 15px;
@@ -531,4 +524,8 @@
   position: absolute;
   top: 164%;
   right: 0;
+}
+
+.store-landing {
+  margin-top: 0;
 }

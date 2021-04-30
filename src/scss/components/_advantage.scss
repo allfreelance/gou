@@ -5,28 +5,37 @@
   }
 
   &__img-block {
-    flex: 0 0 541px;
-    height: 597px;
+    flex: 0 0 48%;
+    height: auto;
     position: relative;
     margin-left: -23px;
-    &::before {
-      content: url(../../img/landing/photo-cover-2.png);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
+    background-image: url(../../img/landing/photo-cover-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 47px 34px 42px 67px;
     img {
       height: 100%;
       object-fit: cover;
     }
     picture {
-      height: 509px;
-      width: 468px;
-      object-fit: cover;
-      position: absolute;
-      top: 47px;
-      left: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      border: 14px solid #f5f7fa;
+      // height: 509px;
+      // width: 468px;
+      // object-fit: cover;
+      // position: absolute;
+      // top: 47px;
+      // left: 52px;
     }
   }
   &__description {
