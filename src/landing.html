@@ -14,7 +14,153 @@
 <body>
 
   @include('partials/header.html')
+  <div class="mobile-bottom-menu mobile-bottom-menu--landing">
+    <div class="mobile-bottom-menu__faculties">
+      <span class="mobile-bottom-menu__faculties-close">
+        <img src="img/mobile/close-filter.svg" alt="Close filter">
+      </span>
+      <h5 class="mobile-bottom-menu__faculties-title">Факультеты</h5>
+      <nav class="mobile-bottom-menu__main container">
+        <ul class="mobile-bottom-menu__main-items desktop-filters">
+          <li class="mobile-bottom-menu__main-item desktop-filters-item active">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Колледж</a>
+          </li>
+          <li class="mobile-bottom-menu__main-item desktop-filters-item">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Бакалавриат</a>
+          </li>
+          <li class="mobile-bottom-menu__main-item desktop-filters-item">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Второе высшее</a>
+          </li>
+          <li class="mobile-bottom-menu__main-item desktop-filters-item">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Магистратура</a>
+          </li>
+          <li class="mobile-bottom-menu__main-item desktop-filters-item">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Аспирантура</a>
+          </li>
+          <li class="mobile-bottom-menu__main-item desktop-filters-item">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Медицина</a>
+            <span></span>
+          </li>
+          <li class="mobile-bottom-menu__main-item desktop-filters-item">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Ординатура</a>
+            <span></span>
+          </li>
+          <li class="mobile-bottom-menu__main-item desktop-filters-item">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">МВА</a>
+            <span></span>
+          </li>
+          <li class="mobile-bottom-menu__main-item desktop-filters-item">
+            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Курсы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-bottom-menu__filters">
+      <span class="mobile-bottom-menu__filters-close">
+        <img src="img/mobile/close-filter.svg" alt="Close filter">
+      </span>
+      <h5 class="mobile-bottom-menu__filters-title">Фильтры</h5>
+      <div class="search__main">
+        <div class="search__selects">
+          <div class="search__select-ege">
+            <select class="selectric select-ege" multiple tabindex="-1">
+              <option value="" disabled>Предметы ЕГЭ</option>
+              <option value="biology">Биология</option>
+              <option value="geography">География</option>
+              <option value="language">Иностранный язык</option>
+              <option value="computer">Информатика и ИКТ</option>
+              <option value="history">История</option>
+              <option value="literature">Литература</option>
+              <option value="mathematics">Математика</option>
+              <option value="social">Обществознание</option>
+              <option value="russian-language">Русский язык</option>
+              <option value="physics">Физика</option>
+              <option value="chemistry">Химия</option>
+            </select>
+          </div>
 
+          <div class="search__select-institution">
+            <select class="selectric select-institution" multiple>
+              <option value="" disabled>Учебное заведение</option>
+              <option value="college">Колледж</option>
+              <option value="undergraduate">Бакалавриат</option>
+              <option value="second-higher ">Второе высшее</option>
+              <option value="master">Магистратура</option>
+              <option value="postgraduate">Аспирантура</option>
+              <option value="medicine">Медицина</option>
+              <option value="residency">Ординатура</option>
+              <option value="mba">MBA</option>
+              <option value="courses">Курсы</option>
+            </select>
+          </div>
+
+          <div class="search__select-faculty">
+            <select class="selectric select-faculty" multiple>
+              <option value="" disabled>Факультет</option>
+              <option value="economy">Экономика</option>
+              <option value="design">Дизайн</option>
+              <option value="business">Бизнес</option>
+              <option value="jurisprudence">Юриспруденция</option>
+              <option value="psychology">Психология</option>
+              <option value="control">Управление</option>
+              <option value="hospitality">Гостепреимство</option>
+              <option value="marketing">Интернет-маркетинг</option>
+              <option value="linguistics">Лингвистика</option>
+              <option value="media">Театр, кино и телевидение</option>
+            </select>
+          </div>
+
+          <div class="search__select-city">
+            <select class="selectric select-city">
+              <option value="">Город</option>
+              <option value="moscow">Москва</option>
+              <option value="petersburg">Санкт-Петербург</option>
+              <option value="astrakhan">Астрахань</option>
+              <option value="barnaul">Барнаул</option>
+              <option value="vladivostok">Владивосток</option>
+              <option value="volgograd">Волгоград</option>
+              <option value="voronezh">Воронеж</option>
+              <option value="yekaterinburg">Екатеринбург</option>
+              <option value="izhevsk">Ижевск</option>
+              <option value="irkutsk">Иркутск</option>
+              <option value="kazan">Казань</option>
+              <option value="kemerovo">Кемерово</option>
+              <option value="kirov">Киров</option>
+            </select>
+          </div>
+          <button class="search__select-btn">Подобрать ВУЗ</button>
+        </div>
+
+        <div class="search__checked-items">
+          <span class="search__checked-item">Биология</span>
+          <span class="search__checked-item">Колледж</span>
+          <span class="search__checked-reset">Сбросить все</span>
+        </div>
+
+        <div class="search__main-checkbox-block">
+          <label class="search__main-custom-checkbox">
+            <input type="checkbox">
+            <span>Военная кафедра</span>
+          </label>
+          <label class="search__main-custom-checkbox">
+            <input type="checkbox">
+            <span>Общежитие</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-bottom-menu__buttons">
+      <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-faculties">
+        <span class="mobile-bottom-menu__btn-name">Факультеты</span>
+      </button>
+      <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-filters">
+        <span class="mobile-bottom-menu__btn-name">
+          <span class="mobile-bottom-menu__btn-quantity">3</span>
+          <span>Фильтры</span>
+        </span>
+      </button>
+    </div>
+  </div>
   <main class="main main-landing">
     <section class="landing">
       <div class="landing__wrapper container">
@@ -95,153 +241,7 @@
         <h5 class="search__title search__title--labding">Выберите факультет</h5>
       </div>
     </section>
-    <div class="mobile-bottom-menu mobile-bottom-menu--landing">
-      <div class="mobile-bottom-menu__faculties">
-        <span class="mobile-bottom-menu__faculties-close">
-          <img src="img/mobile/close-filter.svg" alt="Close filter">
-        </span>
-        <h5 class="mobile-bottom-menu__faculties-title">Факультеты</h5>
-        <nav class="mobile-bottom-menu__main container">
-          <ul class="mobile-bottom-menu__main-items desktop-filters">
-            <li class="mobile-bottom-menu__main-item desktop-filters-item active">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Колледж</a>
-            </li>
-            <li class="mobile-bottom-menu__main-item desktop-filters-item">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Бакалавриат</a>
-            </li>
-            <li class="mobile-bottom-menu__main-item desktop-filters-item">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Второе высшее</a>
-            </li>
-            <li class="mobile-bottom-menu__main-item desktop-filters-item">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Магистратура</a>
-            </li>
-            <li class="mobile-bottom-menu__main-item desktop-filters-item">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Аспирантура</a>
-            </li>
-            <li class="mobile-bottom-menu__main-item desktop-filters-item">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Медицина</a>
-              <span></span>
-            </li>
-            <li class="mobile-bottom-menu__main-item desktop-filters-item">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Ординатура</a>
-              <span></span>
-            </li>
-            <li class="mobile-bottom-menu__main-item desktop-filters-item">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">МВА</a>
-              <span></span>
-            </li>
-            <li class="mobile-bottom-menu__main-item desktop-filters-item">
-              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Курсы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="mobile-bottom-menu__filters">
-        <span class="mobile-bottom-menu__filters-close">
-          <img src="img/mobile/close-filter.svg" alt="Close filter">
-        </span>
-        <h5 class="mobile-bottom-menu__filters-title">Фильтры</h5>
-        <div class="search__main">
-          <div class="search__selects">
-            <div class="search__select-ege">
-              <select class="selectric select-ege" multiple tabindex="-1">
-                <option value="" disabled>Предметы ЕГЭ</option>
-                <option value="biology">Биология</option>
-                <option value="geography">География</option>
-                <option value="language">Иностранный язык</option>
-                <option value="computer">Информатика и ИКТ</option>
-                <option value="history">История</option>
-                <option value="literature">Литература</option>
-                <option value="mathematics">Математика</option>
-                <option value="social">Обществознание</option>
-                <option value="russian-language">Русский язык</option>
-                <option value="physics">Физика</option>
-                <option value="chemistry">Химия</option>
-              </select>
-            </div>
-
-            <div class="search__select-institution">
-              <select class="selectric select-institution" multiple>
-                <option value="" disabled>Учебное заведение</option>
-                <option value="college">Колледж</option>
-                <option value="undergraduate">Бакалавриат</option>
-                <option value="second-higher ">Второе высшее</option>
-                <option value="master">Магистратура</option>
-                <option value="postgraduate">Аспирантура</option>
-                <option value="medicine">Медицина</option>
-                <option value="residency">Ординатура</option>
-                <option value="mba">MBA</option>
-                <option value="courses">Курсы</option>
-              </select>
-            </div>
-
-            <div class="search__select-faculty">
-              <select class="selectric select-faculty" multiple>
-                <option value="" disabled>Факультет</option>
-                <option value="economy">Экономика</option>
-                <option value="design">Дизайн</option>
-                <option value="business">Бизнес</option>
-                <option value="jurisprudence">Юриспруденция</option>
-                <option value="psychology">Психология</option>
-                <option value="control">Управление</option>
-                <option value="hospitality">Гостепреимство</option>
-                <option value="marketing">Интернет-маркетинг</option>
-                <option value="linguistics">Лингвистика</option>
-                <option value="media">Театр, кино и телевидение</option>
-              </select>
-            </div>
-
-            <div class="search__select-city">
-              <select class="selectric select-city">
-                <option value="">Город</option>
-                <option value="moscow">Москва</option>
-                <option value="petersburg">Санкт-Петербург</option>
-                <option value="astrakhan">Астрахань</option>
-                <option value="barnaul">Барнаул</option>
-                <option value="vladivostok">Владивосток</option>
-                <option value="volgograd">Волгоград</option>
-                <option value="voronezh">Воронеж</option>
-                <option value="yekaterinburg">Екатеринбург</option>
-                <option value="izhevsk">Ижевск</option>
-                <option value="irkutsk">Иркутск</option>
-                <option value="kazan">Казань</option>
-                <option value="kemerovo">Кемерово</option>
-                <option value="kirov">Киров</option>
-              </select>
-            </div>
-            <button class="search__select-btn">Подобрать ВУЗ</button>
-          </div>
-
-          <div class="search__checked-items">
-            <span class="search__checked-item">Биология</span>
-            <span class="search__checked-item">Колледж</span>
-            <span class="search__checked-reset">Сбросить все</span>
-          </div>
-
-          <div class="search__main-checkbox-block">
-            <label class="search__main-custom-checkbox">
-              <input type="checkbox">
-              <span>Военная кафедра</span>
-            </label>
-            <label class="search__main-custom-checkbox">
-              <input type="checkbox">
-              <span>Общежитие</span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="mobile-bottom-menu__buttons">
-        <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-faculties">
-          <span class="mobile-bottom-menu__btn-name">Факультеты</span>
-        </button>
-        <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-filters">
-          <span class="mobile-bottom-menu__btn-name">
-            <span class="mobile-bottom-menu__btn-quantity">3</span>
-            <span>Фильтры</span>
-          </span>
-        </button>
-      </div>
-    </div>
+    
     <section class="division college container">
       <h3 class="division__title">Колледж</h3>
       <div class="division__cards-wrapper">
@@ -955,48 +955,57 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x" media="(min-width: 600px)" />
+                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x"
+                    media="(min-width: 600px)" />
                   <img src="img/landing/photo-2.jpg" alt="Учебагоу book">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x" media="(min-width: 600px)" />
+                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x"
+                    media="(min-width: 600px)" />
                   <img src="img/landing/photo-2.jpg" alt="Учебагоу book">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x" media="(min-width: 600px)" />
+                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x"
+                    media="(min-width: 600px)" />
                   <img src="img/landing/photo-2.jpg" alt="Учебагоу book">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x" media="(min-width: 600px)" />
+                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x"
+                    media="(min-width: 600px)" />
                   <img src="img/landing/photo-2.jpg" alt="Учебагоу book">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x" media="(min-width: 600px)" />
+                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x"
+                    media="(min-width: 600px)" />
                   <img src="img/landing/photo-2.jpg" alt="Учебагоу book">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x" media="(min-width: 600px)" />
+                  <source srcset="img/landing/photo-2-2x.jpg 2x, img/landing/photo-2.jpg 1x"
+                    media="(min-width: 600px)" />
                   <img src="img/landing/photo-2.jpg" alt="Учебагоу book">
                 </picture>
               </div>
             </div>
-            <div class="swiper-pagination swiper-pagination-number"></div>
-            <div class="swiper-pagination swiper-pagination-dots"></div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
+            <div class="swiper-pagination swiper-pagination-number" id="bullets"></div>
+            <div class="swiper-pagination-fraction-custom">
+              <span class="swiper-pagination-fraction-custom-1"></span>
+              <span class="swiper-pagination-fraction-custom-2"></span>
+              <span class="swiper-pagination-fraction-custom-3"></span>
+            </div>
           </div>
+          <div class="swiper-button-prev swiper-button-prev-university"></div>
+          <div class="swiper-button-next swiper-button-next-university"></div>
+          <button class="university__img-block-btn"></button>
         </div>
       </div>
     </section>
@@ -1039,55 +1048,61 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x" media="(min-width: 600px)" />
+                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x"
+                        media="(min-width: 600px)" />
                       <img src="img/landing/photo-3.jpg" alt="Учебагоу book">
                     </picture>
                   </div>
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x" media="(min-width: 600px)" />
+                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x"
+                        media="(min-width: 600px)" />
                       <img src="img/landing/photo-3.jpg" alt="Учебагоу book">
                     </picture>
                   </div>
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x" media="(min-width: 600px)" />
+                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x"
+                        media="(min-width: 600px)" />
                       <img src="img/landing/photo-3.jpg" alt="Учебагоу book">
                     </picture>
                   </div>
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x" media="(min-width: 600px)" />
+                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x"
+                        media="(min-width: 600px)" />
                       <img src="img/landing/photo-3.jpg" alt="Учебагоу book">
                     </picture>
                   </div>
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x" media="(min-width: 600px)" />
+                      <source srcset="img/landing/photo-3-2x.jpg 2x, img/landing/photo-3.jpg 1x"
+                        media="(min-width: 600px)" />
                       <img src="img/landing/photo-3.jpg" alt="Учебагоу book">
                     </picture>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next swiper-button-white"></div>
-              <div class="swiper-button-prev swiper-button-white"></div>
-              <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
-                  </div>
+            </div>
+            
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-button-next swiper-button-next-gallery swiper-button-white"></div>
+              <div class="swiper-button-prev swiper-button-prev-gallery swiper-button-white"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/landing/photo-thumb-1.jpg" alt="Учебагоу book">
                 </div>
               </div>
             </div>
@@ -1156,8 +1171,8 @@
           </div>
           <div class="swiper-pagination"></div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev swiper-button-prev-comments"></div>
+          <div class="swiper-button-next swiper-button-next-comments"></div>
 
         </div>
       </div>
@@ -1214,7 +1229,7 @@
               </div>
             </div>
           </div>
-          <div class="contacts__branches">Филиалы на карте</div>
+          <a href="#/" class="contacts__branches">Филиалы на карте</a>
         </div>
       </div>
       <div class="contacts__form">
@@ -1241,7 +1256,7 @@
         </form>
       </div>
 
-    </section> -->
+    </section>
 
   </main>
 

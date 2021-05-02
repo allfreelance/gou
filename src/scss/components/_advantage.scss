@@ -5,18 +5,24 @@
   }
 
   &__img-block {
-    flex: 0 0 48%;
-    height: auto;
+    flex: 0 0 541px;
+    height: 597px;
     position: relative;
     margin-left: -23px;
     background-image: url(../../img/landing/photo-cover-2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 47px 34px 42px 67px;
+    padding: 47px 21px 42px 52px;
     img {
       height: 100%;
       object-fit: cover;
+    }
+    &::before {
+      content: url(../../img/landing/advantage-frame.png);
+      position: absolute;
+      bottom: 27px;
+      left: 24px;
     }
     picture {
       display: flex;
@@ -30,12 +36,6 @@
       right: 0;
       margin: auto;
       border: 14px solid #f5f7fa;
-      // height: 509px;
-      // width: 468px;
-      // object-fit: cover;
-      // position: absolute;
-      // top: 47px;
-      // left: 52px;
     }
   }
   &__description {

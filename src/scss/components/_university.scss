@@ -47,22 +47,34 @@
     
   }
   &__img-block {
-    overflow: hidden;
     flex: 0 0 48%;
     height: 597px;
+    width: 553px;
     position: relative;
     margin-left: -23px;
     background-image: url(../../img/landing/photo-cover-1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 47px 34px 44px 54px;
-    &::before {
-      content: url(../../img/landing/watch-video.jpg);
+    padding: 47px 34px 44px 57px;
+    margin: 0 auto;
+    &-btn {
+      background-image: url(../../img/landing/watch-video.jpg);
       position: absolute;
-      bottom: 8px;
-     left: 40px;
-      z-index: 10;
+      bottom: 10px;
+      left: 40px;
+      z-index: 0;
+      width: 105px;
+      height: 105px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+    &::before {
+      content: url(../../img/landing/university-frame.png);
+      position: absolute;
+      bottom: 23px;
+      left: 52px;
     }
     picture {
       height: 100%;
@@ -176,10 +188,28 @@
 }
 .swiper-container.university-slider {
   width: 470px;
+  z-index: 0 ;
 }
 .university .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
   position: relative;
   z-index: 10000;
   bottom: 3px;
   left: -7px;
+}
+.swiper-pagination-fraction-custom {
+  display: inline-flex;
+  line-height: 24px;
+  bottom: -4px;
+  right: 57px;
+  position: absolute;
+  z-index: 1;
+  color: #455fed;
+}
+.swiper-pagination-fraction-custom-1 {
+  font-size: 24px;
+  line-height: 24px;
+}
+.swiper-pagination-fraction-custom-2 {
+  font-size: 16px;
+  line-height: 24px;
 }
