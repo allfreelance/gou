@@ -93,12 +93,12 @@ const images = () => {
 		'./src/img/**.jpg',
 		'./src/img/**.png',
 		'./src/img/**.jpeg',
-		// './src/img/**.svg',
+		'./src/img/**.svg',
 		'./src/img/**.mp4',
 		'./src/img/**/*.jpg',
 		'./src/img/**/*.png',
 		'./src/img/**/*.jpeg',
-		// './src/img/**/*.svg',
+		'./src/img/**/*.svg',
 		'./src/img/**/*.mp4'
 		])
     .pipe(gulpif(isProd, image()))
