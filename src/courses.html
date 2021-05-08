@@ -4,7 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/main.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>УЧЕБАГОУ.РУ</title>
@@ -12,7 +27,96 @@
 
 <body>
 
-  @include('partials/header.html')
+  <header class="header">
+    <div class="header__banner">
+      <div class="header__banner-wrapper container">
+        <h6 class="header__banner-title">Здесь может быть Ваша реклама</h6>
+        <div class="header__banner-contacts">
+          <div class="header__banner-contact">
+            <span>Звоните:</span>
+            <a href="tel:0222637146" class="header__banner-contact-link">(0222) 63-71-46</a>
+          </div>
+          <div class="header__banner-contact">
+            <span>Пишите:</span>
+            <a href="mailto:vestnik@mogilev.by" class="header__banner-contact-link">vestnik@mogilev.by</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="header__mobile">
+      <a href="index.html" class="header__mobile-link">
+        <img class="header__mobile-logo" src="../img/logo.svg" alt="Logo">
+      </a>
+      <span class="header__mobile-btn"></span>
+    </div>
+    
+    <div class="menu">
+      <nav class="menu__sub container">
+        <a href="index.html" class="menu__sub-logo">
+          <img class="menu__sub-logo-img" src="../img/logo.svg" alt="Logo">
+        </a>
+        <ul class="menu__sub-items">
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Факультеты</a>
+          </li>
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Подготовка к ЕГЭ</a>
+          </li>
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Подготовка к ОГЭ</a>
+          </li>
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Поиск ВУЗа по ЕГЭ</a>
+          </li>
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Абитуриентам</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <nav class="menu__main">
+        <ul class="menu__main-items">
+          <li class="menu__main-item">
+            <a href="landing.html" class="menu__main-item-link">Колледж</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="landing.html" class="menu__main-item-link">Бакалавриат</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="courses.html" class="menu__main-item-link">Второе высшее</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="landing.html" class="menu__main-item-link">Магистратура</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="courses.html" class="menu__main-item-link">Аспирантура</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="landing.html" class="menu__main-item-link">МВА</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="courses.html" class="menu__main-item-link">Курсы</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <nav class="menu__additional">
+        <ul class="menu__additional-items">
+          <li class="menu__additional-item">
+            <a href="#/" class="menu__additional-item-link">Добавить ВУЗ</a>
+          </li>
+          <li class="menu__additional-item">
+            <a href="#/" class="menu__additional-item-link">Размещение рекламы</a>
+          </li>
+          <li class="menu__additional-item">
+            <a href="#/" class="menu__additional-item-link">Обратная связь</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+  </header>
 
   <main class="main main--division">
     <section class="search-courses">

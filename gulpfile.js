@@ -42,7 +42,7 @@ const styles = () => {
     .pipe(gulpif(!isProd, sourcemaps.init()))
     .pipe(sass().on("error", notify.onError()))
     .pipe(autoprefixer({
-      cascade: false,
+      cascade: true,
     }))
     .pipe(gulpif(isProd, cleanCSS({ level: 2 })))
     // .pipe(gulpif(!isProd, sourcemaps.write('.')))
@@ -54,7 +54,7 @@ const stylesBackend = () => {
 	return src(['./src/scss/**/*.scss'])
 		.pipe(sass().on("error", notify.onError()))
     .pipe(autoprefixer({
-      cascade: false,
+      cascade: true,
 		}))
 		.pipe(dest('./app/css/'))
 };
@@ -65,7 +65,7 @@ const scripts = () => {
 		.pipe(gulpif(isProd, uglify().on("error", notify.onError())))
 		.pipe(dest('./app/js/'))
   return src(
-    ['./src/js/functions/**.js', './src/js/components/**.js', './src/js/jquery.selectric.js', './src/js/main.js'])
+    ['./src/js/functions/**.js', './src/js/components/**.js', './src/js/inputmask.min.js', './src/js/jquery.selectric.js', './src/js/main.js'])
     .pipe(gulpif(!isProd, sourcemaps.init()))
     .pipe(concat('main.js'))
     .pipe(gulpif(isProd, uglify().on("error", notify.onError())))
@@ -79,7 +79,7 @@ const scriptsBackend = () => {
     .pipe(concat('vendor.js'))
     .pipe(gulpif(isProd, uglify().on("error", notify.onError())))
 		.pipe(dest('./app/js/'))
-	return src(['./src/js/functions/**.js', './src/js/components/**.js', './src/js/jquery.selectric.js', './src/js/main.js'])
+	return src(['./src/js/functions/**.js', './src/js/components/**.js','./src/js/inputmask.min.js', './src/js/jquery.selectric.js', './src/js/main.js'])
     .pipe(dest('./app/js'))
 };
 

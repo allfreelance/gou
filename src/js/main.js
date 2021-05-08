@@ -251,3 +251,16 @@ const swiperComments = new Swiper('.comments-slider', {
 
 });
 //slider swiper end
+
+/* mask tel start */
+let selector = document.querySelectorAll('input[type="tel"]');
+
+
+let im = new Inputmask({
+  mask: "9 999 999 99 999",
+  showMaskOnHover: false,
+  showMaskOnFocus: true
+});
+im.mask(selector);
+
+/* mask tel end */

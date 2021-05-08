@@ -1,5 +1,6 @@
 .university {
-
+  position: relative;
+  z-index: 10;
   &__wrapper {
     display: flex;
   }
@@ -43,9 +44,6 @@
       left: 0;
     }
   }
-  &__img-block-wrapper {
-    
-  }
   &__img-block {
     flex: 0 0 48%;
     height: 597px;
@@ -75,6 +73,8 @@
       position: absolute;
       bottom: 23px;
       left: 52px;
+      pointer-events: none;
+      z-index: 1;
     }
     picture {
       height: 100%;
@@ -114,9 +114,6 @@
       top: 9px;
       left: 17px;
     }
-  }
-
-  &__statistic-name {
   }
 
   &__statistic-name-value {

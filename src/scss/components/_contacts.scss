@@ -57,9 +57,6 @@
     color: #000;
   }
 
-  &__schedule {
-  }
-
   &__schedule-title {
     font-size: 20px;
     font-weight: 700;
@@ -101,7 +98,6 @@
 
 //form
 .contacts {
-
   &__form-wrapper {
   }
 
@@ -186,12 +182,6 @@
     }
   }
 
-  &__form-label-email {
-  }
-
-  &__form-label-tel {
-  }
-
   &__form-label-checkbox {
     margin-right: 26px;
     cursor: pointer;
@@ -257,16 +247,14 @@
   }
   &__form-btn-span {
     position: relative;
-      &::after {
-        content: url(../../img/landing/sent.png);
-        position: absolute;
-        padding-left: 15px;
-      }
+    &::after {
+      content: url(../../img/landing/sent.svg);
+      position: absolute;
+      padding-left: 15px;
+      width: 38px;
+      height: 24px;
+    }
   }
-
-  &__form-btn-span {
-  }
-  
   input {
     position: relative;
     font-size: 18px;
@@ -300,6 +288,10 @@
     display: inline-block;
     position: relative;
     color: #4f6daa;
+    transition: opacity .3s ease;
+    &:hover {
+      opacity: .7;
+    }
     &::before {
       content: "";
       width: 100%;

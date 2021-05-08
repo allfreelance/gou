@@ -4,7 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/main.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,170 +28,256 @@
 
 <body>
 
-  @include('partials/header.html')
-  <div class="mobile-bottom-menu mobile-bottom-menu--landing">
-    <div class="mobile-bottom-menu__faculties">
-      <span class="mobile-bottom-menu__faculties-close">
-        <img src="img/mobile/close-filter.svg" alt="Close filter">
-      </span>
-      <h5 class="mobile-bottom-menu__faculties-title">Факультеты</h5>
-      <nav class="mobile-bottom-menu__main container">
-        <ul class="mobile-bottom-menu__main-items desktop-filters">
-          <li class="mobile-bottom-menu__main-item desktop-filters-item active">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Колледж</a>
+  <header class="header">
+    <div class="header__banner">
+      <div class="header__banner-wrapper container">
+        <h6 class="header__banner-title">Здесь может быть Ваша реклама</h6>
+        <div class="header__banner-contacts">
+          <div class="header__banner-contact">
+            <span>Звоните:</span>
+            <a href="tel:0222637146" class="header__banner-contact-link">(0222) 63-71-46</a>
+          </div>
+          <div class="header__banner-contact">
+            <span>Пишите:</span>
+            <a href="mailto:vestnik@mogilev.by" class="header__banner-contact-link">vestnik@mogilev.by</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="header__mobile">
+      <a href="index.html" class="header__mobile-link">
+        <img class="header__mobile-logo" src="../img/logo.svg" alt="Logo">
+      </a>
+      <span class="header__mobile-btn"></span>
+    </div>
+    
+    <div class="menu">
+      <nav class="menu__sub container">
+        <a href="index.html" class="menu__sub-logo">
+          <img class="menu__sub-logo-img" src="../img/logo.svg" alt="Logo">
+        </a>
+        <ul class="menu__sub-items">
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Факультеты</a>
           </li>
-          <li class="mobile-bottom-menu__main-item desktop-filters-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Бакалавриат</a>
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Подготовка к ЕГЭ</a>
           </li>
-          <li class="mobile-bottom-menu__main-item desktop-filters-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Второе высшее</a>
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Подготовка к ОГЭ</a>
           </li>
-          <li class="mobile-bottom-menu__main-item desktop-filters-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Магистратура</a>
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Поиск ВУЗа по ЕГЭ</a>
           </li>
-          <li class="mobile-bottom-menu__main-item desktop-filters-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Аспирантура</a>
+          <li class="menu__sub-item">
+            <a href="division.html" class="menu__sub-item-link">Абитуриентам</a>
           </li>
-          <li class="mobile-bottom-menu__main-item desktop-filters-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Медицина</a>
-            <span></span>
+        </ul>
+      </nav>
+      
+      <nav class="menu__main">
+        <ul class="menu__main-items">
+          <li class="menu__main-item">
+            <a href="landing.html" class="menu__main-item-link">Колледж</a>
           </li>
-          <li class="mobile-bottom-menu__main-item desktop-filters-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Ординатура</a>
-            <span></span>
+          <li class="menu__main-item">
+            <a href="landing.html" class="menu__main-item-link">Бакалавриат</a>
           </li>
-          <li class="mobile-bottom-menu__main-item desktop-filters-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">МВА</a>
-            <span></span>
+          <li class="menu__main-item">
+            <a href="courses.html" class="menu__main-item-link">Второе высшее</a>
           </li>
-          <li class="mobile-bottom-menu__main-item desktop-filters-item">
-            <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Курсы</a>
+          <li class="menu__main-item">
+            <a href="landing.html" class="menu__main-item-link">Магистратура</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="courses.html" class="menu__main-item-link">Аспирантура</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="landing.html" class="menu__main-item-link">МВА</a>
+          </li>
+          <li class="menu__main-item">
+            <a href="courses.html" class="menu__main-item-link">Курсы</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <nav class="menu__additional">
+        <ul class="menu__additional-items">
+          <li class="menu__additional-item">
+            <a href="#/" class="menu__additional-item-link">Добавить ВУЗ</a>
+          </li>
+          <li class="menu__additional-item">
+            <a href="#/" class="menu__additional-item-link">Размещение рекламы</a>
+          </li>
+          <li class="menu__additional-item">
+            <a href="#/" class="menu__additional-item-link">Обратная связь</a>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="mobile-bottom-menu__filters">
-      <span class="mobile-bottom-menu__filters-close">
-        <img src="img/mobile/close-filter.svg" alt="Close filter">
-      </span>
-      <h5 class="mobile-bottom-menu__filters-title">Фильтры</h5>
-      <div class="search__main">
-        <div class="search__selects">
-          <div class="search__select-ege">
-            <select class="selectric select-ege" multiple tabindex="-1">
-              <option value="" disabled>Предметы ЕГЭ</option>
-              <option value="biology">Биология</option>
-              <option value="geography">География</option>
-              <option value="language">Иностранный язык</option>
-              <option value="computer">Информатика и ИКТ</option>
-              <option value="history">История</option>
-              <option value="literature">Литература</option>
-              <option value="mathematics">Математика</option>
-              <option value="social">Обществознание</option>
-              <option value="russian-language">Русский язык</option>
-              <option value="physics">Физика</option>
-              <option value="chemistry">Химия</option>
-            </select>
+  
+  </header>
+  
+  <main class="main main-landing">
+    <div class="mobile-bottom-menu mobile-bottom-menu--landing">
+      <div class="mobile-bottom-menu__faculties">
+        <span class="mobile-bottom-menu__faculties-close">
+          <img src="img/mobile/close-filter.svg" alt="Close filter">
+        </span>
+        <h5 class="mobile-bottom-menu__faculties-title">Факультеты</h5>
+        <nav class="mobile-bottom-menu__main container">
+          <ul class="mobile-bottom-menu__main-items desktop-filters">
+            <li class="mobile-bottom-menu__main-item desktop-filters-item active">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Колледж</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Бакалавриат</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Второе высшее</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Магистратура</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Аспирантура</a>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Медицина</a>
+              <span></span>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Ординатура</a>
+              <span></span>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">МВА</a>
+              <span></span>
+            </li>
+            <li class="mobile-bottom-menu__main-item desktop-filters-item">
+              <a href="#/" class="mobile-bottom-menu__main-item-link desktop-filters-link">Курсы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-bottom-menu__filters">
+        <span class="mobile-bottom-menu__filters-close">
+          <img src="img/mobile/close-filter.svg" alt="Close filter">
+        </span>
+        <h5 class="mobile-bottom-menu__filters-title">Фильтры</h5>
+        <div class="search__main">
+          <div class="search__selects">
+            <div class="search__select-ege">
+              <select class="selectric select-ege" multiple tabindex="-1">
+                <option value="" disabled>Предметы ЕГЭ</option>
+                <option value="biology">Биология</option>
+                <option value="geography">География</option>
+                <option value="language">Иностранный язык</option>
+                <option value="computer">Информатика и ИКТ</option>
+                <option value="history">История</option>
+                <option value="literature">Литература</option>
+                <option value="mathematics">Математика</option>
+                <option value="social">Обществознание</option>
+                <option value="russian-language">Русский язык</option>
+                <option value="physics">Физика</option>
+                <option value="chemistry">Химия</option>
+              </select>
+            </div>
+  
+            <div class="search__select-institution">
+              <select class="selectric select-institution" multiple>
+                <option value="" disabled>Учебное заведение</option>
+                <option value="college">Колледж</option>
+                <option value="undergraduate">Бакалавриат</option>
+                <option value="second-higher ">Второе высшее</option>
+                <option value="master">Магистратура</option>
+                <option value="postgraduate">Аспирантура</option>
+                <option value="medicine">Медицина</option>
+                <option value="residency">Ординатура</option>
+                <option value="mba">MBA</option>
+                <option value="courses">Курсы</option>
+              </select>
+            </div>
+  
+            <div class="search__select-faculty">
+              <select class="selectric select-faculty" multiple>
+                <option value="" disabled>Факультет</option>
+                <option value="economy">Экономика</option>
+                <option value="design">Дизайн</option>
+                <option value="business">Бизнес</option>
+                <option value="jurisprudence">Юриспруденция</option>
+                <option value="psychology">Психология</option>
+                <option value="control">Управление</option>
+                <option value="hospitality">Гостепреимство</option>
+                <option value="marketing">Интернет-маркетинг</option>
+                <option value="linguistics">Лингвистика</option>
+                <option value="media">Театр, кино и телевидение</option>
+              </select>
+            </div>
+  
+            <div class="search__select-city">
+              <select class="selectric select-city">
+                <option value="">Город</option>
+                <option value="moscow">Москва</option>
+                <option value="petersburg">Санкт-Петербург</option>
+                <option value="astrakhan">Астрахань</option>
+                <option value="barnaul">Барнаул</option>
+                <option value="vladivostok">Владивосток</option>
+                <option value="volgograd">Волгоград</option>
+                <option value="voronezh">Воронеж</option>
+                <option value="yekaterinburg">Екатеринбург</option>
+                <option value="izhevsk">Ижевск</option>
+                <option value="irkutsk">Иркутск</option>
+                <option value="kazan">Казань</option>
+                <option value="kemerovo">Кемерово</option>
+                <option value="kirov">Киров</option>
+              </select>
+            </div>
+            <button class="search__select-btn">Подобрать ВУЗ</button>
           </div>
-
-          <div class="search__select-institution">
-            <select class="selectric select-institution" multiple>
-              <option value="" disabled>Учебное заведение</option>
-              <option value="college">Колледж</option>
-              <option value="undergraduate">Бакалавриат</option>
-              <option value="second-higher ">Второе высшее</option>
-              <option value="master">Магистратура</option>
-              <option value="postgraduate">Аспирантура</option>
-              <option value="medicine">Медицина</option>
-              <option value="residency">Ординатура</option>
-              <option value="mba">MBA</option>
-              <option value="courses">Курсы</option>
-            </select>
+  
+          <div class="search__checked-items">
+            <span class="search__checked-item">Биология</span>
+            <span class="search__checked-item">Колледж</span>
+            <span class="search__checked-reset">Сбросить все</span>
           </div>
-
-          <div class="search__select-faculty">
-            <select class="selectric select-faculty" multiple>
-              <option value="" disabled>Факультет</option>
-              <option value="economy">Экономика</option>
-              <option value="design">Дизайн</option>
-              <option value="business">Бизнес</option>
-              <option value="jurisprudence">Юриспруденция</option>
-              <option value="psychology">Психология</option>
-              <option value="control">Управление</option>
-              <option value="hospitality">Гостепреимство</option>
-              <option value="marketing">Интернет-маркетинг</option>
-              <option value="linguistics">Лингвистика</option>
-              <option value="media">Театр, кино и телевидение</option>
-            </select>
+  
+          <div class="search__main-checkbox-block">
+            <label class="search__main-custom-checkbox">
+              <input type="checkbox">
+              <span>Военная кафедра</span>
+            </label>
+            <label class="search__main-custom-checkbox">
+              <input type="checkbox">
+              <span>Общежитие</span>
+            </label>
           </div>
-
-          <div class="search__select-city">
-            <select class="selectric select-city">
-              <option value="">Город</option>
-              <option value="moscow">Москва</option>
-              <option value="petersburg">Санкт-Петербург</option>
-              <option value="astrakhan">Астрахань</option>
-              <option value="barnaul">Барнаул</option>
-              <option value="vladivostok">Владивосток</option>
-              <option value="volgograd">Волгоград</option>
-              <option value="voronezh">Воронеж</option>
-              <option value="yekaterinburg">Екатеринбург</option>
-              <option value="izhevsk">Ижевск</option>
-              <option value="irkutsk">Иркутск</option>
-              <option value="kazan">Казань</option>
-              <option value="kemerovo">Кемерово</option>
-              <option value="kirov">Киров</option>
-            </select>
-          </div>
-          <button class="search__select-btn">Подобрать ВУЗ</button>
-        </div>
-
-        <div class="search__checked-items">
-          <span class="search__checked-item">Биология</span>
-          <span class="search__checked-item">Колледж</span>
-          <span class="search__checked-reset">Сбросить все</span>
-        </div>
-
-        <div class="search__main-checkbox-block">
-          <label class="search__main-custom-checkbox">
-            <input type="checkbox">
-            <span>Военная кафедра</span>
-          </label>
-          <label class="search__main-custom-checkbox">
-            <input type="checkbox">
-            <span>Общежитие</span>
-          </label>
         </div>
       </div>
+      <div class="mobile-bottom-menu__buttons">
+        <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-faculties">
+          <span class="mobile-bottom-menu__btn-name">Факультеты</span>
+        </button>
+        <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-filters">
+          <span class="mobile-bottom-menu__btn-name">
+            <span class="mobile-bottom-menu__btn-quantity">3</span>
+            <span>Фильтры</span>
+          </span>
+        </button>
+      </div>
     </div>
-    <div class="mobile-bottom-menu__buttons">
-      <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-faculties">
-        <span class="mobile-bottom-menu__btn-name">Факультеты</span>
-      </button>
-      <button class="mobile-bottom-menu__btn mobile-bottom-menu__btn-filters">
-        <span class="mobile-bottom-menu__btn-name">
-          <span class="mobile-bottom-menu__btn-quantity">3</span>
-          <span>Фильтры</span>
-        </span>
-      </button>
-    </div>
-  </div>
-  <main class="main main-landing">
     <section class="landing">
       <div class="landing__wrapper container">
         <div class="search__breadcrumb">
           <a href="#/" class="search__breadcrumb-item">Университеты</a>
-          <a href="#/" class="search__breadcrumb-item">Москва</a>
-          <a href="#/" class="search__breadcrumb-item">Национальный исследовательский университет МГИЭТ</a>
+          <a href="#/" class="search__breadcrumb-item">Санкт-Петербург</a>
+          <a href="#/" class="search__breadcrumb-item">Юридический факультет</a>
         </div>
         <div class="landing__header">
           <div class="landing__header-left">
             <div class="landing__header-left-status">
-              <picture>
-                <source srcset="img/landing/logo-sinergia2x.png 2x, img/landing/logo-sinergia.png 1x"
-                  media="(min-width: 600px)" />
-                <img src="img/landing/logo-sinergia.png" alt="Учебагоу book">
-              </picture>
+              <img src="img/landing/logo-sinergia.svg" alt="Учебагоу book">
             </div>
             <h1 class="landing__header-left-title"><span>Астраханский государственный</span> архитектурно-строительный
               университет</h1>
@@ -194,16 +295,16 @@
           <h5 class="request__title">Оставь заявку и узнай минимальный проходной балл</h5>
           <div class="request__body">
             <label class="request__label-name">
-              <input type="text" placeholder="Ваше имя">
+              <input type="text" placeholder="Ваше имя" required>
             </label>
             <label class="request__label-email">
-              <input type="email" placeholder="Ваше e-mail">
+              <input type="email" placeholder="Ваше e-mail" required>
             </label>
             <label class="request__label-tel">
-              <input type="tel" placeholder="Ваш телефон">
+              <input type="tel" placeholder="Ваш телефон" required>
             </label>
             <label class="request__label-checkbox">
-              <input type="checkbox">
+              <input type="checkbox" checked>
               <span>Я даю согласие на обработку </span>&nbsp;<a href="#/">персональных данных</a>
             </label>
             <button class="request__body-btn" type="submit"><span class="request__body-btn-span">Отправить
@@ -865,18 +966,18 @@
           <p class="request-consult__body-title">Оставьте заявку, консультант свяжеться с Вами.</p>
           <p class="request-consult__body-title">Вы узнаете информацию о факультетах и проходных баллах.</p>
           <label class="request__label-name request-consult__label-name">
-            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваше имя" required>
           </label>
           <label class="request__label-email request-consult__label-email">
-            <input type="email" placeholder="Ваше e-mail">
+            <input type="email" placeholder="Ваше e-mail" required>
           </label>
           <label class="request__label-tel request-consult__label-tel">
-            <input type="tel" placeholder="Ваш телефон">
+            <input type="tel" placeholder="Ваш телефон" required>
           </label>
           <button class="request__body-btn request-consult__body-btn" type="submit"><span
               class="request__body-btn-span">Отправить заявку</span></button>
           <label class="request__label-checkbox request-consult__label-checkbox">
-            <input type="checkbox">
+            <input type="checkbox" checked>
             <span>Я даю согласие на обработку </span>&nbsp;<a href="#/"> персональных данных</a>
           </label>
         </div>
@@ -1017,19 +1118,19 @@
           <p class="request-consult__body-title">Оставьте заявку, консультант свяжеться с Вами.</p>
           <p class="request-consult__body-title">Вы узнаете информацию о факультетах и проходных баллах.</p>
           <label class="request__label-name request-consult__label-name">
-            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваше имя" required>
           </label>
           <label class="request__label-email request-consult__label-email">
-            <input type="email" placeholder="Ваше e-mail">
+            <input type="email" placeholder="Ваше e-mail" required>
           </label>
           <label class="request__label-tel request-consult__label-tel">
-            <input type="tel" placeholder="Ваш телефон">
+            <input type="tel" placeholder="Ваш телефон" required>
           </label>
           <button class="request__body-btn request-consult__body-btn" type="submit"><span
               class="request__body-btn-span">Отправить заявку</span></button>
           <label class="request__label-checkbox request-consult__label-checkbox">
-            <input type="checkbox">
-            <span>Я даю согласие на обработку </span><a href="#/"> персональных данных</a>
+            <input type="checkbox" checked>
+            <span>Я даю согласие на обработку </span>&nbsp;<a href="#/">персональных данных</a>
           </label>
         </div>
       </div>
@@ -1238,16 +1339,16 @@
             <h5 class="contacts__form-title">Остались вопросы?</h5>
             <p class="contacts__form-subtitle">Оставьте заявку и получите консультацию приёмной комиссии</p>
             <label class="contacts__form-label-name">
-              <input type="text" placeholder="Ваше имя">
+              <input type="text" placeholder="Ваше имя" required>
             </label>
             <label class="contacts__form-label-email">
-              <input type="email" placeholder="Ваше e-mail">
+              <input type="email" placeholder="Ваше e-mail" required>
             </label>
             <label class="contacts__form-label-tel">
-              <input type="tel" placeholder="Ваш телефон">
+              <input type="tel" placeholder="Ваш телефон" required>
             </label>
             <label class="contacts__form-label-checkbox">
-              <input type="checkbox">
+              <input type="checkbox" checked>
               <span>Я даю согласие на обработку </span>&nbsp;<a href="#/"> персональных данных</a>
             </label>
             <button class="contacts__form-btn request__body-btn" type="submit"><span
@@ -1261,7 +1362,6 @@
   </main>
 
   @include('partials/footer.html')
-
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
