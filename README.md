@@ -8,5 +8,5 @@
 #### Compiles and minifies for production
 > gulp build
 
-##### https://allfreelance.github.io/gou/app/
+
 
