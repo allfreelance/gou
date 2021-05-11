@@ -20,12 +20,12 @@
   color: #dc4287;
 }
 .division__card--courses::before {
-  content: url(../../img/division/k2.svg);
+  content: url(../img/division/k2.svg);
   bottom: 29px;
   right: 2px;
 }
 .division__card--courses:hover::before {
-  content: url(../../img/division/k2-hover.svg);
+  content: url(../img/division/k2-hover.svg);
   bottom: 29px;
   right: 2px;
 }

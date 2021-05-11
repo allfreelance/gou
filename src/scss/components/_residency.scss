@@ -20,12 +20,12 @@
   color: #f1681d;
 }
 .division__card--residency::before {
-  content: url(../../img/division/o.svg);
+  content: url(../img/division/o.svg);
   bottom: 20px;
   right: 2px;
 }
 .division__card--residency:hover::before {
-  content: url(../../img/division/o-hover.svg);
+  content: url(../img/division/o-hover.svg);
   bottom: 20px;
   right: 2px;
 }

@@ -20,13 +20,13 @@
   color: #40b7d1;
 }
 .division__card--medicine::before {
-  content: url(../../img/division/m2.svg);
+  content: url(../img/division/m2.svg);
   bottom: 3px;
   right: 2px;
   transform: rotateY(180deg);
 }
 .division__card--medicine:hover::before {
-  content: url(../../img/division/m2-hover.svg);
+  content: url(../img/division/m2-hover.svg);
   bottom: 3px;
   right: 2px;
   transform: rotateY(180deg);

@@ -14,7 +14,7 @@
       background-color: #e8e8e8;
     }
     &::after {
-      content: url(../../img/logo-short.svg);
+      content: url(../img/logo-short.svg);
       position: absolute;
       bottom: 0;
       right: 0;
@@ -62,7 +62,7 @@
     color: #1e2d4b;
     text-transform: uppercase;
     &.discont ~ span::before {
-      content: url(../../img/sale.svg);
+      content: url(../img/sale.svg);
       position: absolute;
       top: 0;
       left: 0;
@@ -121,7 +121,7 @@
   white-space: nowrap;
   margin-right: 43px;
   &::before {
-    content: url(../../img/calendar.svg);
+    content: url(../img/calendar.svg);
     position: absolute;
     top: 0;
     left: 0;
@@ -136,7 +136,7 @@
   position: relative;
   padding-left: 34px;
   &::before {
-    content: url(../../img/map.svg);
+    content: url(../img/map.svg);
     position: absolute;
     top: 50%;
     left: 0;

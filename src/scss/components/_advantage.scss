@@ -9,7 +9,7 @@
     height: 597px;
     position: relative;
     margin-left: -23px;
-    background-image: url(../../img/landing/photo-cover-2.png);
+    background-image: url(../img/landing/photo-cover-2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -19,7 +19,7 @@
       object-fit: cover;
     }
     &::before {
-      content: url(../../img/landing/advantage-frame.png);
+      content: url(../img/landing/advantage-frame.png);
       position: absolute;
       bottom: 27px;
       left: 24px;
@@ -54,7 +54,7 @@
       color: #1e2d4b;
     }
     &::after {
-      content: url(../../img/landing/line-dashed.png);
+      content: url(../img/landing/line-dashed.png);
       position: absolute;
       bottom: -28px;
       left: 0;
@@ -67,7 +67,7 @@
     padding-left: 32px;
     line-height: 34px;
     &::before {
-      content: url(../../img/landing/check-advantage.svg);
+      content: url(../img/landing/check-advantage.svg);
       position: absolute;
       top: 0px;
       left: 0;

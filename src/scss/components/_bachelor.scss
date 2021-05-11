@@ -20,12 +20,12 @@
   color: #427eee;
 }
 .division__card--bachelor::before {
-  content: url(../../img/division/b.svg);
+  content: url(../img/division/b.svg);
   bottom: 46px;
   right: 2px;
 }
 .division__card--bachelor:hover::before {
-  content: url(../../img/division/b-hover.svg);
+  content: url(../img/division/b-hover.svg);
   bottom: 46px;
     right: 2px;
 }

@@ -22,13 +22,13 @@
     margin-bottom: 31px;
     margin-right: 16px;
     &::before {
-      content: url(../../img/landing/line-dashed.png);
+      content: url(../img/landing/line-dashed.png);
       position: absolute;
       bottom: -29px;
       left: 100px;
     }
     &::after {
-      content: url(../../img/landing/hostel-on.svg);
+      content: url(../img/landing/hostel-on.svg);
       position: absolute;
       bottom: 27px;
       right: -44px;
@@ -91,7 +91,7 @@
         background-color: #455fed;
       }
       &::after {
-        content: url(../../img/landing/location-hostes.svg);
+        content: url(../img/landing/location-hostes.svg);
         position: absolute;
         bottom: 0;
         right: 0;
@@ -148,13 +148,13 @@
   width: 522px;
   height: 461px;
   position: relative;
-  background-image: url(../../img/landing/photo-cover-hostel.png);
+  background-image: url(../img/landing/photo-cover-hostel.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   padding: 35px 48px 44px 16px;
   &::before {
-    content: url(../../img/landing/hostel-frame.png);
+    content: url(../img/landing/hostel-frame.png);
     position: absolute;
     bottom: 53px;
     left: -15px;
@@ -197,7 +197,7 @@
     opacity: .8;
   }
   &::after {
-    content: url(../../img/landing/down-arrow.svg);
+    content: url(../img/landing/down-arrow.svg);
     position: absolute;
     width: 27px;
     height: 50px;
@@ -221,7 +221,7 @@
     opacity: .8;
   }
   &::after {
-    content: url(../../img/landing/up-arrow.svg);
+    content: url(../img/landing/up-arrow.svg);
     position: absolute;
     width: 27px;
     height: 44px;

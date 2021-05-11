@@ -20,7 +20,7 @@
       color: #ff3c46;
     }
     &::after {
-      content: url(../../img/landing/line-dashed.png);
+      content: url(../img/landing/line-dashed.png);
       position: absolute;
       bottom: -28px;
       left: 0;
@@ -38,7 +38,7 @@
       margin-bottom: 11px;
     }
     &:nth-child(3)::after {
-      content: url(../../img/landing/line-multicolor.png);
+      content: url(../img/landing/line-multicolor.png);
       position: absolute;
       bottom: -36px;
       left: 0;
@@ -50,14 +50,14 @@
     width: 553px;
     position: relative;
     margin-left: -23px;
-    background-image: url(../../img/landing/photo-cover-1.png);
+    background-image: url(../img/landing/photo-cover-1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     padding: 47px 34px 44px 57px;
     margin: 0 auto;
     &-btn {
-      background-image: url(../../img/landing/watch-video.jpg);
+      background-image: url(../img/landing/watch-video.jpg);
       position: absolute;
       bottom: 10px;
       left: 40px;
@@ -69,7 +69,7 @@
       cursor: pointer;
     }
     &::before {
-      content: url(../../img/landing/university-frame.png);
+      content: url(../img/landing/university-frame.png);
       position: absolute;
       bottom: 23px;
       left: 52px;
@@ -107,7 +107,7 @@
     flex: 0 0 60px;
     width: 60px;
     &::before {
-      content: url(../../img/landing/00.svg);
+      content: url(../img/landing/00.svg);
       position: absolute;
       width: 26px;
       height: 26px;

@@ -1,5 +1,5 @@
 .comments {
-  background-image: url(../../img/landing/map-new.png);
+  background-image: url(../img/landing/map-new.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 33px 0 0 0;
@@ -20,7 +20,7 @@
     position: relative;
     margin-bottom: 53px;
     &::before {
-      content: url(../../img/landing/line-dashed.png);
+      content: url(../img/landing/line-dashed.png);
       position: absolute;
       bottom: -28px;
       left: 46%;
@@ -114,7 +114,7 @@
   padding: 17px 10px 20px 25px;
   position: relative;
   &::after {
-    content: url(../../img/landing/play.png);
+    content: url(../img/landing/play.png);
     position: absolute;
     bottom: -5%;
     right: -3%;
@@ -157,7 +157,7 @@
     opacity: .7;
   }
   &::after {
-    content: url(../../img/landing/prev-arrow.svg);
+    content: url(../img/landing/prev-arrow.svg);
     position: absolute;
     top: -12px;
     left: 10px;
@@ -183,7 +183,7 @@
     opacity: .7;
   }
   &::after {
-    content: url(../../img/landing/next-arrow.svg);
+    content: url(../img/landing/next-arrow.svg);
     position: absolute;
     top: -12px;
     left: 10px;

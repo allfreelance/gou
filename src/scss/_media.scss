@@ -398,7 +398,7 @@
     font-size: 12px;
   }
   .request__body-btn-span::after {
-    content: url(../../img/landing/sent.svg);
+    content: url(../img/landing/sent.svg);
     position: absolute;
     padding-left: 13px;
     width: 32px;
@@ -705,7 +705,7 @@
     margin-bottom: 23px;
   }
   .contacts__form-btn-span::after {
-    content: url(../../img/landing/sent.svg);
+    content: url(../img/landing/sent.svg);
     width: 32px;
     height: 16px;
   }
@@ -1240,7 +1240,7 @@
       &:first-child {
         border-right: 1px solid #778cef;
         &::before {
-          content: url(../../img/mobile/fakultets.svg);
+          content: url(../img/mobile/fakultets.svg);
           top: 0;
           left: 0;
           width: 21px;
@@ -1249,7 +1249,7 @@
       }
       &:nth-child(2) {
         &::before {
-          content: url(../../img/mobile/filter.svg);
+          content: url(../img/mobile/filter.svg);
           top: 0;
           left: 0;
           width: 18px;
@@ -1297,7 +1297,7 @@
       }
     }
     &__faculties-close {
-      background-image: url(../../img/mobile/close-filter.svg);
+      background-image: url(../img/mobile/close-filter.svg);
       background-repeat: no-repeat;
       position: absolute;
       top: 13px;
@@ -1354,7 +1354,7 @@
     }
 
     &__filters-close {
-      background-image: url(../../img/mobile/close-filter.svg);
+      background-image: url(../img/mobile/close-filter.svg);
       background-repeat: no-repeat;
       position: absolute;
       top: 13px;
@@ -2009,7 +2009,7 @@
     right: -37%;
   }
   .swiper-slide-person-data::after {
-    content: url(../../img/landing/play-small.png);
+    content: url(../img/landing/play-small.png);
     position: absolute;
     bottom: -14%;
     right: -10%;

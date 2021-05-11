@@ -62,7 +62,7 @@ $selectric-font-size: 17px !default; // Font size
     font: 0/0 a;
 
     &:after {
-      content: url(../../img/search/arrow.svg);
+      content: url(../img/search/arrow.svg);
       position: absolute;
       top: 15px;
       right: 11px;
@@ -236,7 +236,7 @@ $selectric-font-size: 17px !default; // Font size
     &.selected {
       color: #455fed;
       &::before {
-        content: url(../../img/search/check.svg);
+        content: url(../img/search/check.svg);
         position: absolute;
         top: 6px;
         left: -9px;

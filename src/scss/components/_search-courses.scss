@@ -9,7 +9,7 @@
     margin: 0 auto;
   }
   &::after {
-    content: url(../../img/bg-division.jpg);
+    content: url(../img/bg-division.jpg);
     position: absolute;
     right: 0;
     top: 0;
@@ -100,7 +100,7 @@
   }
 
   &__main-custom-checkbox > input:checked + span::before {
-    content: url(../../img/search/checkbox.svg);
+    content: url(../img/search/checkbox.svg);
     position: absolute;
     display: flex;
     align-items: center;
@@ -147,7 +147,7 @@
     border-radius: 31px;
     margin-right: 10px;
     &::before {
-      content: url(../../img/search/del.png);
+      content: url(../img/search/del.png);
       position: absolute;
       top: 6px;
       right: 5px;
@@ -207,7 +207,7 @@
   }
 
   &__main-custom-checkbox > input:checked + span::before {
-    content: url(../../img/search/checkbox.svg);
+    content: url(../img/search/checkbox.svg);
     position: absolute;
     display: flex;
     align-items: center;

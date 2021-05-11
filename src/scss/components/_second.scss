@@ -20,12 +20,12 @@
   color: #3ec082;
 }
 .division__card--second::before {
-  content: url(../../img/division/s.svg);
+  content: url(../img/division/s.svg);
   bottom: 24px;
   right: 2px;
 }
 .division__card--second:hover::before {
-  content: url(../../img/division/s-hover.svg);
+  content: url(../img/division/s-hover.svg);
   bottom: 24px;
   right: 2px;
 }

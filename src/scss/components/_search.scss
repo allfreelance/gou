@@ -114,7 +114,7 @@
     padding: 78px 45px;
     line-height: 30px;
     margin-top: 10px;
-    background-image: url(../../img/search/ad.jpg);
+    background-image: url(../img/search/ad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -229,7 +229,7 @@
     border-radius: 31px;
     margin-right: 10px;
     &::before {
-      content: url(../../img/search/del.png);
+      content: url(../img/search/del.png);
       position: absolute;
       top: 6px;
       right: 5px;
@@ -291,7 +291,7 @@
   }
 
   &__main-custom-checkbox > input:checked + span::before {
-    content: url(../../img/search/checkbox.svg);
+    content: url(../img/search/checkbox.svg);
     position: absolute;
     display: flex;
     align-items: center;
@@ -370,7 +370,7 @@
   margin-bottom: 51px!important;
   padding-top: 20px;
   &::after {
-    content: url(../../img/bg-division.jpg);
+    content: url(../img/bg-division.jpg);
     position: absolute;
     right: 0;
     top: 0;

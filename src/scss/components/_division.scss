@@ -38,7 +38,7 @@
       background: linear-gradient( 151deg, rgb(194,140,249) 0%, rgb(150,78,224) 100%);
       box-shadow: 0.4px 4px 9px 0px rgba(190, 114, 238, 0.47);
       &::before {
-        content: url(../../img/division/k.svg);
+        content: url(../img/division/k.svg);
       }
       .division__card-title {
         color: #fff;
@@ -66,7 +66,7 @@
       background-color: #9845ed;
     }
     &::before {
-      content: url(../../img/division/k.svg);
+      content: url(../img/division/k.svg);
       position: absolute;
       bottom: 0;
       right: 0;
@@ -146,7 +146,7 @@
       padding-left: 30px;
       margin-right: 10px;
       &::before {
-        content: url(../../img/plus.svg);
+        content: url(../img/plus.svg);
         width: 20px;
         height: 20px;
         top: 0;

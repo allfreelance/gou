@@ -20,12 +20,12 @@
   color: #ef9f43;
 }
 .division__card--magistracy::before {
-  content: url(../../img/division/a.svg);
+  content: url(../img/division/a.svg);
   bottom: 14px;
   right: 2px;
 }
 .division__card--magistracy:hover::before {
-  content: url(../../img/division/a-hover.svg);
+  content: url(../img/division/a-hover.svg);
   bottom: 14px;
   right: 2px;
 }

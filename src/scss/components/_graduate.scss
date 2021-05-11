@@ -20,12 +20,12 @@
   color: #1fc4be;
 }
 .division__card--graduate::before {
-  content: url(../../img/division/m.svg);
+  content: url(../img/division/m.svg);
   bottom: 30px;
   right: 3px;
 }
 .division__card--graduate:hover::before {
-  content: url(../../img/division/m-hover.svg);
+  content: url(../img/division/m-hover.svg);
   bottom: 30px;
   right: 3px;
 }

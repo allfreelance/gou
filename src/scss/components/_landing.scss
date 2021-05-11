@@ -2,14 +2,14 @@
   overflow: hidden;
   position: relative;
   &::before {
-    content: url(../../img/landing/fon-01.png);
+    content: url(../img/landing/fon-01.png);
     position: absolute;
     top: 4px;
     left: 3%;
     z-index: -1;
   }
   &::after {
-    content: url(../../img/landing/fon-02.png);
+    content: url(../img/landing/fon-02.png);
     position: absolute;
     top: -58px;
     right: 2%;
@@ -180,7 +180,7 @@
   }
   &__label-name {
     &::after {
-      content: url(../../img/landing/user.svg);
+      content: url(../img/landing/user.svg);
       position: absolute;
       right: -6px;
       top: 9px;
@@ -190,7 +190,7 @@
   }
   &__label-email {
     &::after {
-      content: url(../../img/landing/mail.svg);
+      content: url(../img/landing/mail.svg);
       position: absolute;
       right: -15px;
       top: 9px;
@@ -200,7 +200,7 @@
   }
   &__label-tel {
     &::after {
-      content: url(../../img/landing/phone.svg);
+      content: url(../img/landing/phone.svg);
       position: absolute;
       right: -16px;
       top: 8px;
@@ -236,7 +236,7 @@
     &-span {
       position: relative;
       &::after {
-        content: url(../../img/landing/sent.svg);
+        content: url(../img/landing/sent.svg);
         position: absolute;
         padding-left: 15px;
         width: 38px;
@@ -247,7 +247,7 @@
 }
 
 .request-consult {
-  background-image: url(../../img/landing/consult.jpg);
+  background-image: url(../img/landing/consult.jpg);
   background-repeat: no-repeat;
   box-shadow: none;
   border: none;
@@ -256,7 +256,7 @@
   margin-top: 84px;
   margin-bottom: 70px;
   &::before {
-    content: url(../../img/landing/points_bg.png);
+    content: url(../img/landing/points_bg.png);
     position: absolute;
     top: 250%;
     right: 0;
@@ -273,7 +273,7 @@
     padding: 9px 0px 0 66px;
     position: relative;
     &::before {
-      content: url(../../img/landing/operator.png);
+      content: url(../img/landing/operator.png);
       position: absolute;
       top: 78px;
       left: -99px;
@@ -523,7 +523,7 @@
 }
 
 .request__label-checkbox > input:checked + span::before {
-  content: url(../../img/landing/check.svg);
+  content: url(../img/landing/check.svg);
   position: absolute;
   display: flex;
   align-items: center;
@@ -540,7 +540,7 @@
 }
 
 .main-landing::before {
-  content: url(../../img/landing/points-03.png);
+  content: url(../img/landing/points-03.png);
   position: absolute;
   top: 99%;
   right: 0;
