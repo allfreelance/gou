@@ -1753,6 +1753,11 @@
   .landing .search__breadcrumb-item:not(:last-child)::after {
     right: -8px;
   }
+  
+  //thanks
+  .thanks__wrapper {
+    margin-top: 51px;
+  }
 }
 
 @media (max-width: 576px) {

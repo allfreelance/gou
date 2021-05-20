@@ -153,103 +153,109 @@ if (paginationBtnPrev && paginationBtnNext) {
 
 //slider swiper start
 
-const swiper = new Swiper('.university-slider', {
-  // loop: true,
-  spaceBetween: 20,
-  pagination: {
-    el: '.swiper-pagination.swiper-pagination-number',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next-university',
-    prevEl: '.swiper-button-prev-university',
-  },
-});
+const swiperWrapper = document.querySelector('.swiper-wrapper');
 
-let fractionCustomCurrent = document.querySelector('.swiper-pagination-fraction-custom-1');
-let fractionCustomSlash = document.querySelector('.swiper-pagination-fraction-custom-2');
-let fractionCustomAll = document.querySelector('.swiper-pagination-fraction-custom-3');
-let newValue;
-  for (let i = 0; i < swiper.slides.length; i++){
-    if (swiper.slides[i].classList.contains('swiper-slide-active')) {
-      newValue = swiper.slides[i];
-      let fractionCurrentValue = swiper.slides[i].getAttribute('aria-label');
-      fractionCustomCurrent.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(0,2);
-      fractionCustomSlash.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(1,2);
-      fractionCustomAll.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(3,4);
+if (swiperWrapper) {
+  const swiper = new Swiper('.university-slider', {
+    // loop: true,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination.swiper-pagination-number',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next-university',
+      prevEl: '.swiper-button-prev-university',
+    },
+  });
+  
+  let fractionCustomCurrent = document.querySelector('.swiper-pagination-fraction-custom-1');
+  let fractionCustomSlash = document.querySelector('.swiper-pagination-fraction-custom-2');
+  let fractionCustomAll = document.querySelector('.swiper-pagination-fraction-custom-3');
+  let newValue;
+    for (let i = 0; i < swiper.slides.length; i++){
+      if (swiper.slides[i].classList.contains('swiper-slide-active')) {
+        newValue = swiper.slides[i];
+        let fractionCurrentValue = swiper.slides[i].getAttribute('aria-label');
+        fractionCustomCurrent.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(0,2);
+        fractionCustomSlash.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(1,2);
+        fractionCustomAll.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(3,4);
+      }
     }
-  }
-let observer = new MutationObserver(mutationRecords => {
-  for (let i = 0; i < swiper.slides.length; i++) {
-    if (swiper.slides[i].classList.contains('swiper-slide-active')) {
-      fractionCustomCurrent.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(0,2);
-      fractionCustomSlash.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(1,2);
-      fractionCustomAll.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(3,4);
+  let observer = new MutationObserver(mutationRecords => {
+    for (let i = 0; i < swiper.slides.length; i++) {
+      if (swiper.slides[i].classList.contains('swiper-slide-active')) {
+        fractionCustomCurrent.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(0,2);
+        fractionCustomSlash.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(1,2);
+        fractionCustomAll.innerHTML = swiper.slides[i].getAttribute('aria-label').substr(3,4);
+      }
     }
-  }
-});
-observer.observe(newValue, {
-  childList: false,
-  subtree: false,
-  attributes: true,
-});
-
-const galleryThumbs = new Swiper('.gallery-thumbs', {
-  direction: 'horizontal',
-  slidesPerView: 3,
-  spaceBetween: 9,
-  // freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-  breakpoints: {
-    768: {
-      direction: 'vertical',
+  });
+  observer.observe(newValue, {
+    childList: false,
+    subtree: false,
+    attributes: true,
+  });
+  
+  const galleryThumbs = new Swiper('.gallery-thumbs', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 9,
+    // freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+      768: {
+        direction: 'vertical',
+      },
     },
-  },
-});
-
-const galleryTop = new Swiper('.gallery-top', {
-  spaceBetween: 40,
-  navigation: {
-    nextEl: '.swiper-button-next-gallery',
-    prevEl: '.swiper-button-prev-gallery',
-  },
-  thumbs: {
-    swiper: galleryThumbs
-  }
-});
-
-const swiperComments = new Swiper('.comments-slider', {
-  // slidesPerView: 3,
-  // centeredSlides: true,
-  // spaceBetween: 20,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next-comments',
-    prevEl: '.swiper-button-prev-comments',
-  },
-  breakpoints: {
-    1170: {
-      slidesPerView: 3,
-      centeredSlides: false,
-      spaceBetween: 20,
+  });
+  
+  const galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 40,
+    navigation: {
+      nextEl: '.swiper-button-next-gallery',
+      prevEl: '.swiper-button-prev-gallery',
     },
-    768: {
-      slidesPerView: 'auto',
-      centeredSlides: true,
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+  
+  const swiperComments = new Swiper('.comments-slider', {
+    // slidesPerView: 3,
+    // centeredSlides: true,
+    // spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    280: {
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      // spaceBetween: 20,
+  
+    navigation: {
+      nextEl: '.swiper-button-next-comments',
+      prevEl: '.swiper-button-prev-comments',
     },
-  },
+    breakpoints: {
+      1170: {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+      },
+      280: {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        // spaceBetween: 20,
+      },
+    },
+  
+  });
+}
 
-});
+
 //slider swiper end
 
 /* mask tel start */
