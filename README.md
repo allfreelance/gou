@@ -1,13 +1,18 @@
-# newProject
+# UchebaGou
 https://allfreelance.github.io/gou/app/
 > Used HTML, CSS/SASS, JS, Gulp, Git.
-> Layout in compliance with BEM semantics and methodology. Green zone GooglePageSpeed.
+> Compliance with BEM methodology and semantics. Green Zone GooglePageSpeed.
+
+[![](https://github.com/allfreelance/dp/blob/main/screen.jpg)](https://allfreelance.github.io/gou/app/)
 
 #### Compiles and hot-reloads for development
 > gulp
 
 #### Compiles and minifies for production
 > gulp build
+
+
+
 
 
 
